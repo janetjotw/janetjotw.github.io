@@ -1,0 +1,49 @@
+baseURL = "https://janetjotw.github.io/"
+languageCode = "en-us"
+title = "Tech Writing by Janet Jose"
+theme = "PaperMod"
+[pagination]
+  pagerSize = 10
+
+[params]
+  author = "Janet Jose"
+  description = "Technical Writer & Editor — API docs, developer guides, and more."
+  homeInfoParams = { Title = "Hi, I'm Janet Jose", Content = "Technical Writer & Editor with expertise in API documentation, developer guides, and technical content. AWS Solutions Architect certified." }
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowShareButtons = false
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/janetjotw"
+
+[[params.socialIcons]]
+  name = "linkedin"
+  url = "https://linkedin.com/in/janetjose"
+
+[menu]
+  [[menu.main]]
+    name = "Blog"
+    url = "/posts/"
+    weight = 1
+  [[menu.main]]
+    name = "About"
+    url = "/about-me/"
+    weight = 2
+  [[menu.main]]
+    name = "Services"
+    url = "/services/"
+    weight = 3
+  [[menu.main]]
+    name = "API Reference"
+    url = "/api-reference/"
+    weight = 4
+  [[menu.main]]
+    name = "Resources"
+    url = "/resources/"
+    weight = 5
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
