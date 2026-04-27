@@ -20,6 +20,8 @@ The Publish/Subscribe pattern is also called Pub/Sub. Messages are transmitted o
 
 There is a drawback to the pub/sub design due to the coupling around the message topic and structure. If the message structure changes, the subscriber must change the receiving structure else it leads to errors. Real-world examples include social media, IoT messages from a device that uses MQTT (MQ Telemetry Transport) protocol, AWS SNS.
 
+![Pub/Sub diagram](/images/webhooks/pub-sub.png)
+
 **Push/Pull**
 
 **Push** - is a pattern where the server pushes the data to the client when the information is available. Examples of the push concept include notifications like an email or a webhook.
@@ -30,13 +32,17 @@ There is a drawback to the pub/sub design due to the coupling around the message
 
 Long polling is a technique where the server keeps the incoming client connection open for as long as possible, delivering a response when it is available to the client. Long polling is server-side dependent. The traditional approach of the client requesting for data from the server remains the same, but the server may not respond immediately as it may have none. It responds when the data becomes available. There are pros and cons with long polling that includes performance and scaling. You can visualize an example of an email app sending requests to the server to check if a new mail has arrived.
 
+![Long polling diagram](/images/webhooks/longpolling.png)
+
 **WebSockets** 
 
 WebSockets enable two-way real-time or bi-directional communication between two systems. Web Sockets keep the connection open for both the client and the server to exchange information. Examples include online games and chat.
 
 To read more on webhooks and the tools that are supported, check out the [WebSocket API](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API).
 
-There are quite a few out there that I haven't discussed. Leave a comment if you know more. 
+There are quite a few out there that I haven't discussed. Leave a comment if you know more.
+
+![WebSockets diagram](/images/webhooks/websockets.png)
 
 Now that you understand some common web communication design patterns, let us dive into webhooks.
 
@@ -47,6 +53,8 @@ Now that you understand some common web communication design patterns, let us di
 A push-based design is more effective than a poll--lesser strain on the network and resources. Webhook is a push-based design approach to publish data into third-party systems, near real time. It is a one-way communication system i.e., sending data from the system hosting the service to another system that would receive the data, and if needed act upon it. The system pushes data to the configured secured URL or an endpoint when an event is triggered. The receiver must be configured to adhere to the design structure of the incoming data. Webhook requests are sent as a `HTTP POST` method.
 
 The diagram depicts a high-level overview of how a webhook interacts between two systems. When there is an event triggered on System A, which may be hosted on the Cloud or on-premises, a webhook push event sends the data or a payload to System B.
+
+![Webhook diagram](/images/webhooks/webhook.png)
 
 For System B to receive data on its endpoint, it must configure the URL of System B on System A and structure the incoming data based on the payload System A sends and may choose to write its application to process the information. It functions similar to Web service contracts. The payload can be in the format of JSON or an XML.
 
