@@ -42,3 +42,5 @@ Now, include the generated `modules.rst` file in your `index.rst` file.
 The HTML files are generated under > build/html. Open the HTML files on a browser.
 
 5. See the screenshot below of the HTML documentation generated on Sphinx.
+
+![](/images/sphinx-rst-to-html/screen-shot-2025-01-30-at-10.13.23-am.png)

@@ -59,7 +59,11 @@ From the terminal, run the command to see the output.
 
 Confirm that you have configured aws on your terminal as the credentials are stored in the config files. You will get an error if the keys are not saved.
 
+![](/images/interface-reference-for-aws-rds/startdb.png)
+
 Check the AWS RDS service on the Management Console to confirm that the DB instance is getting instantiated.
+
+![](/images/interface-reference-for-aws-rds/dbinstance.png)
 
 This is the formatted JSON output retrieved from the terminal.
 
@@ -242,4 +246,8 @@ print(response)`
 
 The response shows the parameter `DBInstanceStatus:stopping`. It may take a few minutes before it displays as `stopped`.
 
+![](/images/interface-reference-for-aws-rds/stopdb.png)
+
 The Console will update the DB instance as stopped once it terminates the database.
+
+![](/images/interface-reference-for-aws-rds/stopdbinstance.png)

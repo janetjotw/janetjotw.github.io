@@ -26,6 +26,8 @@ Copy editing- Correct copy for grammar, punctuation, style, usage, sentence stru
 
 - VTU, Bangalore, India - bachelor of engineering in Electronics and Communication.
 
+![](/images/about-me/aws-certified-solutions-architect-associate.png)
+
 **Work Summary**
 
 - Worked with Carrier Corp, Polte as a Senior Technical Writer

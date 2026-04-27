@@ -34,6 +34,8 @@ APIs are similar to Web services. Web services are web-based applications that h
 
 The below diagram shows the request from a client when the URL is typed on the browser and the response is returned in either XML or JSON format.
 
+![](/images/rest-api-weather-api-service/restarch.png)
+
 Image source: [https://idratherbewriting.com/learnapidoc/docapis_what_is_a_rest_api.html](https://entwineinwords.wordpress.com/blog/)
 
 ## **Get weather conditions for a location**
@@ -124,7 +126,11 @@ The response returned is a JSON object or a payload with key-value pairs.
 
 **Note**: There are tools like [Postman ](https://www.getpostman.com/downloads/)or [Swagger](https://swagger.io/) that help with writing and validating the API calls. The Swagger online editor to write the openapi specification document can be seen. 
 
+![](/images/rest-api-weather-api-service/swaggerweather.png)
+
 The screenshot shows a sample HTML file where the GET request is invoked to get the weather conditions.
+
+![](/images/rest-api-weather-api-service/weatherapi.png)
 
 ## **Get wind conditions at a location**
 
@@ -197,12 +203,18 @@ API key and the zip code of the place and the country code.
 
 The screenshot shows a sample HTML file where the GET request is invoked to get the wind conditions.
 
+![](/images/rest-api-weather-api-service/weatherapi.png)
+
 ## **Final output**
 
 When you open the browser and run the HTML file, the below page is loaded.
 
 The screenshot shows the UI elements to check for wind before the button click.
 
+![](/images/rest-api-weather-api-service/windbefore.png)
+
 The UI response after the button click.
+
+![](/images/rest-api-weather-api-service/windafter.png)
 
 This shows how we can make REST API calls to get the desired output. REST is easy to learn, it is not tied to a programming language and can run on any platform.

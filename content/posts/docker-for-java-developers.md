@@ -57,6 +57,8 @@ Install [Eclipse IDE](https://www.eclipse.org/downloads/packages/) for Java EE D
 
 2. The project should be exported as a Maven project on Eclipse. Build the application and after the Maven build, you should get a **Build Success** message.
 
+![](/images/docker-for-java-developers/eclipse_wrkspace.png)
+
 3. Running the application
 
 - Open the Docker Quick Start Terminal. The Toolbox will show a valid IP address once Docker is started.- Navigate to the application path where the yml file is located.- `Run docker-compose up`- Docker will build the image for Tomcat and a MySQL database and start the container. The project is loaded in the Tomcat webapps directory in the web server container.
@@ -64,10 +66,14 @@ Install [Eclipse IDE](https://www.eclipse.org/downloads/packages/) for Java EE D
 4. Open the browser and type `localhost:8080` and you should be able to see the Tomcat home page. This indicates that the web server is ready!
 If you are not able to load using localhost, use the IP of your machine.
 
+![](/images/docker-for-java-developers/tomcat.png)
+
 5. To go to the application, Click on `/UserSignup` link.
 
-# 
+# ![](/images/docker-for-java-developers/usersignup.png)
 
 Click on the Signup button to create a new user.
+
+![](/images/docker-for-java-developers/signup.png)
 
 **Congrats**! This completes a quick deployment of a Java web application on Docker. For troubleshooting, explore the GitHub [link](https://github.com/docker/labs/blob/master/developer-tools/java/chapters/appb-troubleshooting.adoc).

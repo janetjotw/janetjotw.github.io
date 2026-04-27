@@ -14,9 +14,13 @@ GPS stands for **G**lobal **P**ositioning **S**ystem and is a type of global 
 
 GPS satellites circle the earth in the orbit and transmit signals into the earth. The satellites have multiple atomic clocks synchronized with Coordinated Universal Time (UTC) and broadcast signals in the gigahertz (GHz) range. Modern smartphones have a GNSS receiver. The receiver captures the radio signals and decodes them. The time can be compared to see when the signal was transmitted by the satellite and the timestamp when it was received on the receiver. This is also referred to as GPS clock synchronization. Wireless networks and data networks use the GPS timing to keep the cellular base stations in sync.
 
+![](/images/gps-in-smartphones/janet-gps-1.png)
+
 GNSS receivers are implemented on a single chipset that supports single frequency operation on a single electronic integrated circuit (IC). The terms chip, microchip, IC, and silicon chip are synonymous. A chip can function as an entire computer that resides on a device having RAM, ROM, clock, the input and output control unit and CPU. GNSS receivers have 2 parts--antenna and the processing unit.
 
 The basic block diagram shows a high-level overview of the components on a smartphone. The diagram will not focus on the external components typically seen on an IC. The aim is to illustrate how the GNSS receiver is integrated onto a circuit.
+
+![](/images/gps-in-smartphones/gnssrec-1.png)
 
 ## Location Positioning 
 
