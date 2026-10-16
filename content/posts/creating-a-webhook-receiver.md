@@ -12,7 +12,7 @@ The following steps provide instructions on how to install Python, Flask, and ng
 
 ## Install Python
 
-Refer to [Python, Boto3, and AWS RDS]({{< relref "posts/python-boto3-and-aws-rds.md" >}}), where I show how to install Python and check the version installed. You need Python 3.
+Refer to [Python, Boto3, and AWS RDS](https://entwineinwords.wordpress.com/2022/08/13/python-boto3-and-aws-rds/), where I show how to install Python and check the version installed. You need Python 3.
 
 ## Install Flask
 
