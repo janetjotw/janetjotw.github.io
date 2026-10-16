@@ -1,6 +1,6 @@
 ---
 title: "Create a webhook receiver"
-date: 2026-010-16T12:22:31+00:00
+date: 2026-10-16T11:47:31+00:00
 draft: false
 ---
 
@@ -12,7 +12,7 @@ The following steps provide instructions on how to install Python, Flask, and ng
 
 ## Install Python
 
-Refer to [Python, Boto3, and AWS RDS](https://entwineinwords.wordpress.com/2022/08/13/python-boto3-and-aws-rds/), where I show how to install Python and check the version installed. You need Python 3.
+Refer to [Python, Boto3, and AWS RDS](https://entwineinwords.wordpress.com/2022/08/13/python-boto3-and-aws-rds/), where I show how to install Python and check the installed version. You need Python 3.
 
 ## Install Flask
 
