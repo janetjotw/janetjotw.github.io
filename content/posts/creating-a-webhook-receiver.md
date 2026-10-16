@@ -1,14 +1,14 @@
 ---
 title: "Creating a webhook receiver"
-date: 2025-01-30T12:22:31+00:00
+date: 2026-010-16T12:22:31+00:00
 draft: false
 ---
 
 This tutorial covers how to create a sample webhook receiver to receive payloads.
 
-The use cases for configuring a webhook could be an IoT device sending location coordinates, device sensor readings, payment notifications for an e-commerce application, and more.
+The use cases for configuring a webhook can include an IoT device sending location coordinates, device sensor readings, payment notifications for an e-commerce application, and more.
 
-Follow the following steps to install Python, Flask, and ngrok to get your setup ready to receive webhook data.
+The following steps provide instructions on how to install Python, Flask, and ngrok to receive webhook data.
 
 ## Install Python
 
@@ -24,11 +24,11 @@ pip install flask
 
 ## Install ngrok
 
-I have macOS. See the [ngrok downloads page](https://ngrok.com/downloads/windows) for your operating system.
-
 ```bash
 brew install ngrok
 ```
+
+See the [ngrok downloads page](https://ngrok.com/downloads/windows) for your operating system.
 
 ## Start server
 
@@ -42,7 +42,7 @@ ngrok http 5000
 
 Now that your setup is ready, you'll create a Python app and run it to start the server.
 
-You can use any editor. I use VS Code. You could also use a command-line editor `nano` to create the file.
+You can use any editor. You could also use a command-line editor, `nano` to create the file. This exercise is tried with VS Code.
 
 ```bash
 nano main.py
