@@ -1,5 +1,5 @@
 ---
-title: "Creating a webhook receiver"
+title: "Create a webhook receiver"
 date: 2026-010-16T12:22:31+00:00
 draft: false
 ---
