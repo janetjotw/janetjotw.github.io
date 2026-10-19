@@ -16,11 +16,11 @@ Before integrating, ensure you have:
 
 - The `requests` library installed, which is covered in Step 1
 
-- API Key for authentication to use the Example Products API. You can obtain one by *.*
+- An API Key for authentication to use the Example Products API. You can obtain one by *.*
 
-## Integration Walkthrough
+## Integration walkthrough
 
-### Step 1: Install Dependencies
+### Step 1: Install dependencies
 
 Install the `requests` package
 
@@ -28,7 +28,7 @@ Install the `requests` package
 `pip install requests`
 ```
 
-### **Step 2: API Key Authentication**
+### **Step 2: API Key authentication**
 
 The API uses an **API Key** for authentication. Include the key in the **headers**:
 
@@ -52,7 +52,7 @@ else:
 `
 ```
 
-## **Step 3: Making API Requests**
+## **Step 3: Making API requests**
 
 This section covers the following **Products** endpoints:
 
@@ -68,7 +68,7 @@ else:
 `
 ```
 
-### 3.2  Sending a POST Request to create a new product
+### 3.2  Sending a POST request to create a new product
 
 ```
 `payload = {"name": "Test Jane", "email": "jane.test@xyz.com"}
@@ -82,7 +82,7 @@ else:
 `
 ```
 
-### **Step 4: **API Rate Limits
+### **Step 4: **API rate limits
 
 Limit the number of requests per second/minute to avoid throttling.
 
@@ -96,7 +96,7 @@ for i in range(5):
 `
 ```
 
-### Step 5: **Logging API Calls**
+### Step 5: **Logging API calls**
 
 Python's logging module is used to track API requests and responses for debugging and monitoring.
 
@@ -113,9 +113,8 @@ def make_request():
 
 ## Troubleshooting
 
-**
+[Tips to troubleshoot common behaviors]
 
 ## Reference
 
-*
-*
+[Additional documentation]
