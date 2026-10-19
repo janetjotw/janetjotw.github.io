@@ -4,11 +4,11 @@ date: 2025-03-26T11:19:15+00:00
 draft: false
 ---
 
-## **Overview**
+## Overview
 
 This guide provides step-by-step instructions on how to integrate a Python application with the Example Products API using the `requests` library. It covers **authentication**, **handling requests and responses**, and **rate limiting**.
 
-## **Prerequisites**
+## Prerequisites
 
 Before integrating, ensure you have:
 
@@ -28,7 +28,7 @@ Install the `requests` package
 `pip install requests`
 ```
 
-### **Step 2: API Key authentication**
+### Step 2: API Key authentication
 
 The API uses an **API Key** for authentication. Include the key in the **headers**:
 
@@ -52,7 +52,7 @@ else:
 `
 ```
 
-## **Step 3: Making API requests**
+## Step 3: Making API requests
 
 This section covers the following **Products** endpoints:
 
@@ -82,7 +82,7 @@ else:
 `
 ```
 
-### **Step 4: **API rate limits
+### Step 4: API rate limits
 
 Limit the number of requests per second/minute to avoid throttling.
 
@@ -96,7 +96,7 @@ for i in range(5):
 `
 ```
 
-### Step 5: **Logging API calls**
+### Step 5: Logging API calls**
 
 Python's logging module is used to track API requests and responses for debugging and monitoring.
 
