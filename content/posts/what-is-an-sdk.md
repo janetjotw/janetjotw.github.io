@@ -4,19 +4,23 @@ date: 2025-03-07T22:12:34+00:00
 draft: false
 ---
 
-- [Introduction](https://entwineinwords.wordpress.com/2025/03/07/what-is-an-sdk/#introduction)- [API versus SDK](https://entwineinwords.wordpress.com/2025/03/07/what-is-an-sdk/#api-versus-sdk)- [How SDKs act as wrappers](https://entwineinwords.wordpress.com/2025/03/07/what-is-an-sdk/#how-sdks-act-as-wrappers)- [Conclusion](https://entwineinwords.wordpress.com/2025/03/07/what-is-an-sdk/#conclusion)
+## On this page
+- [Introduction](https://entwineinwords.wordpress.com/2025/03/07/what-is-an-sdk/#introduction)
+- [API versus SDK](https://entwineinwords.wordpress.com/2025/03/07/what-is-an-sdk/#api-versus-sdk)
+- [How SDKs act as wrappers](https://entwineinwords.wordpress.com/2025/03/07/what-is-an-sdk/#how-sdks-act-as-wrappers)
+- [Conclusion](https://entwineinwords.wordpress.com/2025/03/07/what-is-an-sdk/#conclusion)
 
 ## Introduction
 
-In simple words, an SDK, short for **Software Development Kit**, is often described as a **wrapper** around a business's **Application Programming Interface** (API) and services but it's more than just a simple wrapper. It's a complete tool kit that makes it easier for developers to interact directly with a REST or GraphQL endpoint developed for the company's business objectives.  
+In simple words, an SDK, short for **Software Development Kit**, is often described as a **wrapper** around a business's **Application Programming Interface** (API) and services, but it's more than just a simple wrapper. It's a complete toolkit that makes it easier for developers to interact directly with a REST or GraphQL endpoint developed for the company's business objectives.  
 
-## **API versus SDK**
+## API versus SDK
 
-- **API (Application Programming Interface):** An API is a set of rules that defines how different business entities or components should communicate with each other. A company exposes its services or business use cases through an API. Customers can then consume or call that service to order or avail of that service. For example, flight bookings on a website listing the available flights and how to book a flight from a source to a destination.  
+- **API (Application Programming Interface):** An API is a set of rules that defines how different business entities or components should communicate with each other. A company exposes its services or business use cases through an API. Customers can then consume or call that service to order or avail of that service. For example, flight bookings on a website list the available flights and how to book a flight from a source to a destination.  
 
 - **SDK (Software Development Kit):** An SDK is a collection of tools and resources that developers use to build applications for a service. It often includes:
 
-**Libraries:** Pre-written code that provides common functionalities, saving developers from writing everything from scratch.  
+- **Libraries:** Pre-written code that provides common functionalities, saving developers from writing everything from scratch.  
 
 - **Documentation:** Explains how to use the API and the tools in the SDK.  
 
@@ -24,7 +28,7 @@ In simple words, an SDK, short for **Software Development Kit**, is often descri
 
 - **Debugging tools:** Helps developers identify and fix errors in their code.  
 
-## **How SDKs act as wrappers**
+## How SDKs act as wrappers
 
 SDKs often provide a simplified and more user-friendly way to interact with an API. They handle many of the underlying complexities, such as:  
 
@@ -36,7 +40,7 @@ SDKs often provide a simplified and more user-friendly way to interact with an A
 
 - **Error handling:** Translating API error messages into more understandable formats.
 
-**Benefits of using an SDK:**
+### Benefits of using an SDK
 
 - **Faster development:** Developers can use pre-built components and code samples to quickly integrate with the API.  
 
@@ -44,9 +48,9 @@ SDKs often provide a simplified and more user-friendly way to interact with an A
 
 - **Improved consistency:** SDKs often enforce coding standards and best practices, leading to more consistent and reliable code. 
 
-## **Conclusion**
+## Conclusion
 
-An SDK is not just a wrapper, but a comprehensive tool kit that includes libraries, documentation, and other resources to help developers build applications that interact with a business's API and services.
+An SDK is not just a wrapper, but a comprehensive toolkit that includes libraries, documentation, and other resources to help developers build applications that interact with a business's API and services.
 
 It simplifies the development process, making it faster, easier, and more efficient.   
 
