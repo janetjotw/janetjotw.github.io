@@ -52,11 +52,11 @@ else:
 `
 ```
 
-## Step 3: Making API requests
+### Step 3: Making API requests
 
 This section covers the following **Products** endpoints:
 
-### 3.1 Sending a GET request to retrieve all products
+#### 3.1 Sending a GET request to retrieve all products
 
 ```
 `response = requests.get(BASE_URL, headers=headers)
@@ -68,7 +68,7 @@ else:
 `
 ```
 
-### 3.2  Sending a POST request to create a new product
+#### 3.2  Sending a POST request to create a new product
 
 ```
 `payload = {"name": "Test Jane", "email": "jane.test@xyz.com"}
@@ -96,7 +96,7 @@ for i in range(5):
 `
 ```
 
-### Step 5: Logging API calls**
+### Step 5: Logging API calls
 
 Python's logging module is used to track API requests and responses for debugging and monitoring.
 
