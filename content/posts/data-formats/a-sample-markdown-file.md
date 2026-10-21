@@ -47,8 +47,8 @@ xxxxxxxxxxx"
 {
 "test":
     {
-    "name": Janet,
-    "site": entwineinwords.wordpress.com
+    "name": "Janet",
+    "site": "entwineinwords.wordpress.com"
     }
 }
 ```
