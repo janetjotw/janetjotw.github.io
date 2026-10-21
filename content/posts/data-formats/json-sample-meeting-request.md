@@ -17,7 +17,7 @@ The JSON looks as follows:
   "reminder": 15,
   "invitees": ["michael@example.com", "thelma@example.com",
   "david@example.com", "leon@example.com"]
-}
+  }
 }
 ```
 
@@ -36,15 +36,19 @@ The JSON is as follows:
 
 ```json
 {
-  “meeting” : {
-  “time”: “2015-09-01 10:00”,
-  “duration”: 60,
-  “description”: “2016 Strategic Planning Meeting”,
-  “location”: “Building 23, Room 206”,
-  “reminder”: 15,
-  “invitees”: [“michael@example.com”, ["thelma@example.com](mailto:%22thelma@example.com)",
-  ["david@example.com](mailto:%22david@example.com)", ["leon@example.com](mailto:%22leon@example.com)"]
-}
+  "meeting":
+  {
+    "time": "2015-09-01 10:00",
+    "duration": 60,
+    "description": "2016 Strategic Planning Meeting",
+    "location": "Building 23, Room 206",
+    "reminder": 15,
+    "invitees": ["michael@example.com",
+                ["thelma@example.com](mailto:%22thelma@example.com)",
+                ["david@example.com](mailto:%22david@example.com)",
+                ["leon@example.com](mailto:%22leon@example.com)"
+                ]
+    }
 }
 ```
 
