@@ -14,6 +14,7 @@ A few of the things that I explored and learnt are:
  	- HTML tags img for rendering images and resizing were more flexible than the Markdown script.
  	- HTML tags for line breaks.
  	- Tabs for fenced code blocks: ``` backticks before and after the code block.
+  
 For example:
 
 ## Sample curl script for an API call
@@ -46,7 +47,7 @@ xxxxxxxxxxx"
 {
 "test":
     {
-    "name: Janet,
+    "name": Janet,
     "site": entwineinwords.wordpress.com
     }
 }
