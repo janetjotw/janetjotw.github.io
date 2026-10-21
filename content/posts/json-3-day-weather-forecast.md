@@ -8,33 +8,33 @@ draft: false
 
 ```json
 {
-"longitude": 47.60,
-"latitude": 122.33,
-"forecasts": [
-{
-"date": "2015-09-01",
-"description": "sunny",
-"maxTemp": 22,
-"minTemp": 20,
-"windSpeed": 12,
-"danger": false
-},
-{
-"date": "2015-09-02",
-"description": "overcast",
-"maxTemp": 21,
-"minTemp": 17,
-"windSpeed": 15,
-"danger": false
-},
-{
-"date": "2015-09-03",
-"description": "raining",
-"maxTemp": 20,
-"minTemp": 18,
-"windSpeed": 13,
-"danger": false
-}
+  "longitude": 47.60,
+  "latitude": 122.33,
+  "forecasts": [
+  {
+  "date": "2015-09-01",
+  "description": "sunny",
+  "maxTemp": 22,
+  "minTemp": 20,
+  "windSpeed": 12,
+  "danger": false
+  },
+  {
+  "date": "2015-09-02",
+  "description": "overcast",
+  "maxTemp": 21,
+  "minTemp": 17,
+  "windSpeed": 15,
+  "danger": false
+  },
+  {
+  "date": "2015-09-03",
+  "description": "raining",
+  "maxTemp": 20,
+  "minTemp": 18,
+  "windSpeed": 13,
+  "danger": false
+  }
 ]
 }
 ```
@@ -57,33 +57,33 @@ The forecasts array shows the weather for 3 days, and this is just a sample arra
 
 ```json
 {
-“longitude”: 47.60,
-“latitude”: 122.33,
-“forecasts”: [
-{
-“date”: “2015-09-01”,
-“description”: “sunny”,
-“maxTemp”: 22,
-“minTemp”: 20,
-“windSpeed”: 12,
-“danger”: false
-},
-{
-“date”: “2015-09-02”,
-“description”: “overcast”,
-“maxTemp”: 21,
-“minTemp”: 17,
-“windSpeed”: 15,
-“danger”: false
-},
-{
-“date”: “2015-09-03”,
-“description”: “raining”,
-“maxTemp”: 20,
-“minTemp”: 18,
-“windSpeed”: 13,
-“danger”: false
-}
+  “longitude”: 47.60,
+  “latitude”: 122.33,
+  “forecasts”: [
+  {
+  “date”: “2015-09-01”,
+  “description”: “sunny”,
+  “maxTemp”: 22,
+  “minTemp”: 20,
+  “windSpeed”: 12,
+  “danger”: false
+  },
+  {
+  “date”: “2015-09-02”,
+  “description”: “overcast”,
+  “maxTemp”: 21,
+  “minTemp”: 17,
+  “windSpeed”: 15,
+  “danger”: false
+  },
+  {
+  “date”: “2015-09-03”,
+  “description”: “raining”,
+  “maxTemp”: 20,
+  “minTemp”: 18,
+  “windSpeed”: 13,
+  “danger”: false
+  }
 ]
 }
 
