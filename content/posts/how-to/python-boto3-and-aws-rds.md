@@ -8,7 +8,9 @@ In the past, you would have created a relational database using the user interfa
 
 In this how-to guide, you will learn how to install and configure a **Python** SDK library called **Boto3**. The Boto3 library will be used to programmatically call the interface of **AWS RDS API** to create and manage a database, which is covered under References.
 
-- [Pre-requisites](https://entwineinwords.wordpress.com/2022/08/13/python-boto3-and-aws-rds/#pre-requisites)- [Get started](https://entwineinwords.wordpress.com/2022/08/13/python-boto3-and-aws-rds/#get-started)- [References](https://entwineinwords.wordpress.com/2022/08/13/python-boto3-and-aws-rds/#references)
+- [Pre-requisites](https://entwineinwords.wordpress.com/2022/08/13/python-boto3-and-aws-rds/#pre-requisites)-
+- [Get started](https://entwineinwords.wordpress.com/2022/08/13/python-boto3-and-aws-rds/#get-started)-
+- [References](https://entwineinwords.wordpress.com/2022/08/13/python-boto3-and-aws-rds/#references)
 
 ## Pre-requisites
 
