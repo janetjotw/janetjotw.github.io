@@ -4,7 +4,13 @@ date: 2022-08-11T23:28:13+00:00
 draft: false
 ---
 
-- [History of web communication](https://entwineinwords.wordpress.com/2022/08/11/webhooks/#history-of-web-communication)- [Introduction to webhooks](https://entwineinwords.wordpress.com/2022/08/11/webhooks/#introduction-to-webhooks)- [What is a webhook?](https://entwineinwords.wordpress.com/2022/08/11/webhooks/#what-is-a-webhook)- [Why a webhook?](https://entwineinwords.wordpress.com/2022/08/11/webhooks/#why-a-webhook)- [Security](https://entwineinwords.wordpress.com/2022/08/11/webhooks/#security)- [Use cases](https://entwineinwords.wordpress.com/2022/08/11/webhooks/#use-cases)- [Example webhook payload](https://entwineinwords.wordpress.com/2022/08/11/webhooks/#example-webhook-payload)
+- [History of web communication](https://entwineinwords.wordpress.com/2022/08/11/webhooks/#history-of-web-communication)
+- [Introduction to webhooks](https://entwineinwords.wordpress.com/2022/08/11/webhooks/#introduction-to-webhooks)
+- [What is a webhook?](https://entwineinwords.wordpress.com/2022/08/11/webhooks/#what-is-a-webhook)
+- [Why a webhook?](https://entwineinwords.wordpress.com/2022/08/11/webhooks/#why-a-webhook)
+- [Security](https://entwineinwords.wordpress.com/2022/08/11/webhooks/#security)
+- [Use cases](https://entwineinwords.wordpress.com/2022/08/11/webhooks/#use-cases)
+- [Example webhook payload](https://entwineinwords.wordpress.com/2022/08/11/webhooks/#example-webhook-payload)
 
 Solution providers or enterprises today exhibit their available services or interfaces for the product offerings through APIs. Customers, developers, or third-party integrators can benefit from businesses exposing APIs by utilizing their solution through one of the integration mechanisms called webhooks.
 
