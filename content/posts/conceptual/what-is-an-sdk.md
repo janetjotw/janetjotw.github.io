@@ -12,7 +12,7 @@ draft: false
 
 ## Introduction
 
-In simple words, an SDK, short for **Software Development Kit**, is often described as a **wrapper** around a business's **Application Programming Interface** (API) and services, but it's more than just a simple wrapper. It's a complete toolkit that makes it easier for developers to interact directly with a REST or GraphQL endpoint developed for the company's business objectives.  
+An SDK, short for **Software Development Kit**, is often described as a **wrapper** around a business's **Application Programming Interface** (API) and services, but it's more than a wrapper. It's a complete toolkit that makes it easier for developers to interact directly with a REST or GraphQL endpoint developed for the company's business objectives.  
 
 ## API versus SDK
 
