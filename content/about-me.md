@@ -4,9 +4,9 @@ date: 2018-11-02T15:46:28+00:00
 draft: false
 ---
 
-When you work with me you are getting to connect to an individual who is adept at technology, how to use products, and who has written code for almost 9 years, worked in an R&D set-up, and given demos to the Leadership team. This experience is my foundation and a very valuable one with lots of memories.
+When you work with me, you are getting to connect to an individual who is adept at technology, how to use products, and who has written code for almost 9 years, worked in an R&D set-up, and given demos to the Leadership team. This experience is my foundation and a very valuable one with lots of memories.
 
-There was this urge to reinvent myself and for the love of words -- the end product I am a Technical Writer and Editor. I deeply admire clear and succinct writing and how the writer expresses their thoughts. Words have the power to stir, transform and take me to a different world--not to forget the sheer joy of a reading a profound sentence.
+There was this urge to reinvent myself, and for the love of words -- the end product, I am a Technical Writer and Editor. I deeply admire clear and succinct writing and how the writer expresses their thoughts. Words have the power to stir, transform and take me to a different world--not to forget the sheer joy of reading a profound sentence.
 
 Call me a "Jill of all trades." I enjoy polishing an author's work and making it ready to connect with the reader. The reader is the primary audience. They can make or break a piece of writing. So, it is essential that your writing be meticulous and crafted to perfection. My goal is to preserve the author’s voice and connect to the reader with clarity and consistency.
 
@@ -30,9 +30,11 @@ Copy editing- Correct copy for grammar, punctuation, style, usage, sentence stru
 
 **Work Summary**
 
-- Worked with Carrier Corp, Polte as a Senior Technical Writer
+- Microsoft as a Programmer/Writer 3 
 
-- Worked as a Web Editor with [MatterOfTrust.org](http://www.matteroftrust.org/)
+- Carrier Corp and Polte as a Senior Technical Writer
+
+- Web Editor with [MatterOfTrust.org](http://www.matteroftrust.org/)
 
 - Freelance Editor with Cambridge University Press, and On Paper Publishing.
 
