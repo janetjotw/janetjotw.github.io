@@ -1,18 +1,22 @@
 ---
 title: "REST API - Weather API Service"
-date: 2019-02-27T10:50:40+00:00
+date: 2027-10-21T10:50:40+00:00
 draft: false
 ---
 
 **Table of Contents**
 
-- [Introduction](https://entwineinwords.wordpress.com/2019/02/27/rest-api-call-to-get-weather-and-wind-updates-from-a-weather-api-service/#introduction)- [Overview of REST](https://entwineinwords.wordpress.com/2019/02/27/rest-api-call-to-get-weather-and-wind-updates-from-a-weather-api-service/#2-overview-of-rest)- [Get weather conditions for a location](https://entwineinwords.wordpress.com/2019/02/27/rest-api-call-to-get-weather-and-wind-updates-from-a-weather-api-service/#3-get-weather-conditions-for-a-location)- [Get wind conditions at a location](https://entwineinwords.wordpress.com/2019/02/27/rest-api-call-to-get-weather-and-wind-updates-from-a-weather-api-service/#4-get-wind-conditions-at-a-location)- [Final output](https://entwineinwords.wordpress.com/2019/02/27/rest-api-call-to-get-weather-and-wind-updates-from-a-weather-api-service/#5-final-output)
+- [Introduction](https://entwineinwords.wordpress.com/2019/02/27/rest-api-call-to-get-weather-and-wind-updates-from-a-weather-api-service/#introduction)
+- [Overview of REST](https://entwineinwords.wordpress.com/2019/02/27/rest-api-call-to-get-weather-and-wind-updates-from-a-weather-api-service/#2-overview-of-rest)
+- [Get weather conditions for a location](https://entwineinwords.wordpress.com/2019/02/27/rest-api-call-to-get-weather-and-wind-updates-from-a-weather-api-service/#3-get-weather-conditions-for-a-location)
+- [Get wind conditions at a location](https://entwineinwords.wordpress.com/2019/02/27/rest-api-call-to-get-weather-and-wind-updates-from-a-weather-api-service/#4-get-wind-conditions-at-a-location)
+- [Final output](https://entwineinwords.wordpress.com/2019/02/27/rest-api-call-to-get-weather-and-wind-updates-from-a-weather-api-service/#5-final-output)
 
 ## **Introduction**
 
 This page documents a sample REST API call to get weather and wind updates from a Weather API Service.
 
-Let's get started with the fundamentals of **API** and web service before we understand REST. You can learn how to invoke a REST API call to get the weather and wind conditions of a place.
+Let's get started with the fundamentals of **API** and web services before we understand REST. You can learn how to invoke a REST API call to get the weather and wind conditions of a place.
 
 **API** stands for **Application Programming Interface**. API is the connecting medium or interface between two systems. If you have registered with any social media account and try to login with your credentials, there is an API call that checks to verify if you are a registered user.
 
@@ -207,7 +211,7 @@ The screenshot shows a sample HTML file where the GET request is invoked to get 
 
 ## **Final output**
 
-When you open the browser and run the HTML file, the below page is loaded.
+When you open the browser and run the HTML file, the page is loaded as follows:
 
 The screenshot shows the UI elements to check for wind before the button click.
 
