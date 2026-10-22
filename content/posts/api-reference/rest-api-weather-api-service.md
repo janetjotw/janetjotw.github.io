@@ -62,7 +62,7 @@ We will use the `appid` to authorize the OpenWeatherMap API to consume the servi
 `https://api.openweathermap.org/data/2.5/weather?zip=75098&units=imperial&appid=2ac115d3bf152bd58d446dcf3b07ea55`
 ```
 
-**Input parameter**
+**Input parameters **
 
 API key (appid) and the zip code (zip) of the place.
 
@@ -83,7 +83,7 @@ Type the above curl script in your terminal and observe the response.
 The response returned is a JSON object or a payload with key-value pairs.
 
 ```json
-`{
+{
   "coord": {
     "lon": -96.5394,
     "lat": 33.0041
@@ -125,10 +125,10 @@ The response returned is a JSON object or a payload with key-value pairs.
   "id": 0,
   "name": "Wylie",
   "cod": 200
-}`
+}
 ```
 
-**Note**: There are tools like [Postman ](https://www.getpostman.com/downloads/)or [Swagger](https://swagger.io/) that help with writing and validating the API calls. The Swagger online editor to write the openapi specification document can be seen. 
+**Note**: There are tools like [Postman ](https://www.getpostman.com/downloads/)or [Swagger](https://swagger.io/) that help with writing and validating the API calls. The Swagger online editor to write the OpenAPI specification document can be seen. 
 
 ![](/images/rest-api-weather-api-service/swaggerweather.png)
 
