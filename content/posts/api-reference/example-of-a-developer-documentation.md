@@ -15,7 +15,7 @@ The Simple File Storage API allows developers to store, retrieve, and delete fil
 ### Base URL
 
 ```
-`[https://api.simplestorage.com/v1](https://api.simplestorage.com/v1)`
+[https://api.simplestorage.com/v1](https://api.simplestorage.com/v1)
 ```
 
 ### Authentication
@@ -23,7 +23,7 @@ The Simple File Storage API allows developers to store, retrieve, and delete fil
 All API requests require an API key to be included in the `Authorization` header.
 
 ```
-`Authorization: Bearer YOUR_API_KEY`
+Authorization: Bearer YOUR_API_KEY
 ```
 
 ## Endpoints
@@ -41,7 +41,11 @@ All API requests require an API key to be included in the `Authorization` header
 #### Response (201 Created)
 
 ```json
-{ "fileId": "unique-file-id", "fileName": "uploaded-file.txt", "fileUrl": "https://storage.simplestorage.com/unique-file-id" }
+{
+"fileId": "unique-file-id",
+"fileName": "uploaded-file.txt",
+"fileUrl": "https://storage.simplestorage.com/unique-file-id"
+}
 ```
 
 #### Example Request (using `curl`)
@@ -178,7 +182,7 @@ print(f"Delete Status: {delete_status}")
 
 - **Base URL:** Providing the base URL that all requests use.
 
-This example provides a foundation for creating developer documentation. Adapt it to your specific API and target audience.
+This example provides a foundation for creating developer documentation.
 
 
 API reference is a crucial part, but developer documentation encompasses much more. Let's expand on the **Simple File Storage API** example to include other essential elements:
@@ -187,9 +191,10 @@ API reference is a crucial part, but developer documentation encompasses much mo
 
 - **Purpose:** To guide new users through their first steps with the API.
 
-- **Content:** Welcome to the Simple File Storage API!
+- **Content:** Welcome to the Simple File Storage API.
 
-- Prerequisites: API Key (How to Obtain One)
+- **Prerequisites**:
+  API Key
 
 - Step 1: Setting up your environment (installing necessary libraries and tools)
 
@@ -211,21 +216,21 @@ API reference is a crucial part, but developer documentation encompasses much mo
 
 ## File organization
 
-- Understanding File Storage Structure
+- Understanding File storage structure
 
-- Best Practices for Naming Files
+- Best practices for naming files
 
 ## Security considerations
 
-- Data Encryption and Privacy
+- Data encryption and privacy
 
-- "Access Control and Permissions
+- Access control and permissions
 
 ## Performance optimization
 
-- Handling Large Files
+- Handling large files
 
-- Efficient File Retrieval
+- Efficient file retrieval
 
 ## Error handling and retry Logic
 
@@ -237,13 +242,13 @@ API reference is a crucial part, but developer documentation encompasses much mo
 
 - **Purpose:** To provide detailed information on using the official SDKs (Software Development Kits).
 
-- **Content:** Installation Instructions
+- **Content:** Installation instructions
 
-- API Client Initialization
+- API client initialization
 
-- Detailed Function/Method Reference
+- Detailed Function/Method reference
 
-- Code Examples for Common Use Cases
+- Code examples for common use cases
 
 - Troubleshooting SDK issues
 
@@ -255,7 +260,7 @@ API reference is a crucial part, but developer documentation encompasses much mo
 
 - **Content:**
 
-## Image Upload and Hosting
+## Image upload and hosting
 
 - Using the API for image storage in a web application.
 
@@ -273,15 +278,16 @@ API reference is a crucial part, but developer documentation encompasses much mo
 - **Purpose:** To keep developers informed of API changes and updates.
 
 - **Content:**
-- Version History
 
-- New Features and Enhancements
+- Version history
 
-- Bug Fixes
+- New features and enhancements
 
-- Deprecation Notices
+- Bug fixes
 
-- Migration Guides (if applicable)
+- Deprecation notices (if applicable)
+
+- Migration guides (if applicable)
 
 ## FAQ
 
@@ -299,7 +305,7 @@ API reference is a crucial part, but developer documentation encompasses much mo
 
 - Is my data secure?
 
-## Interactive Examples/Playground:**
+## Interactive examples/playground:**
 
 - **Purpose:** To allow developers to experiment with the API in a sandbox environment.
 
@@ -344,8 +350,6 @@ pip install simple-file-storage-sdk
 
 To use the SDK, you need to initialize an `ApiClient` instance with your API key:
 
-
-
 ```Python
 from simple_file_storage_sdk import ApiClient
 
@@ -354,13 +358,11 @@ client = ApiClient(api_key)
 
 ```
 
-### Upload File (upload_file method)
+### Upload file (upload_file method)
 
 - **Description:** Uploads a file to the storage system.
 
 - **Usage:**
-
-
 
 ```Python
 file_path = "path/to/your/file.txt"
@@ -376,26 +378,25 @@ else:
 
 ```
 
-- **Parameters:**
+**Parameters:**
 
 `file_path` (str): The path to the file to upload.
 
-- **Returns:**
+**Returns:**
 
-`ApiResponse` object containing `file_id`, `file_name`, and `file_url` attributes on success.
+- `ApiResponse` object containing `file_id`, `file_name`, and `file_url` attributes on success.
 
 - `None` on failure.
 
-- **Error Handling:**
+**Error Handling:**
 
 The SDK raises exceptions for API errors (e.g., `UnauthorizedError`, `BadRequestError`).
 
-### Get File (get_file method)**
+### Get file (get_file method)**
 
 - **Description:** Retrieves a file from the storage system.
 
 - **Usage:**
-
 
 ```Python
 file_id = "unique-file-id"
@@ -408,21 +409,21 @@ else:
 
 ```
 
-- **Parameters:**
+**Parameters:**
 
 `file_id` (str): The ID of the file to retrieve.
 
-- **Returns:**
+**Returns:**
 
-`bytes` containing the file content on success.
+- `bytes` containing the file content on success.
 
 - `None` on failure.
 
-- **Error Handling:**
+**Error Handling:**
 
 The SDK raises exceptions for API errors (e.g., `UnauthorizedError`, `NotFoundError`).
 
-### Delete File (delete_file method)
+### Delete file (delete_file method)
 
 - **Description:** Deletes a file from the storage system.
 
@@ -439,21 +440,21 @@ else:
 
 ```
 
-- **Parameters:**
+**Parameters:**
 
 `file_id` (str): The ID of the file to delete.
 
-- **Returns:**
+**Returns:**
 
-`True` on success.
+- `True` on success.
 
 - `False` on failure.
 
-- **Error Handling:**
+**Error handling:**
 
 The SDK raises exceptions for API errors (e.g., `UnauthorizedError`, `NotFoundError`).
 
-### Error Handling (Exceptions)
+### Error handling (Exceptions)
 
 The SDK defines custom exceptions for API errors. You can catch these exceptions to handle errors gracefully:
 
@@ -476,13 +477,12 @@ except BadRequestError as e:
 
 - **Custom timeouts:**
 
-
 ```Python
 client = ApiClient(api_key, timeout=10) # Set timeout to 10 seconds.
 
 ```
 
-- **Logging:**
+**Logging:**
 
 The SDK uses the standard Python `logging` module. You can configure logging to capture SDK logs.
 
@@ -506,7 +506,7 @@ The SDK uses the standard Python `logging` module. You can configure logging to 
 
 - **Error handling:** Information on how to handle API errors using exceptions.
 
-- **Advanced Usage:** Examples of advanced features and customization options.
+- **Advanced usage:** Examples of advanced features and customization options.
 
 - **Contribution guidelines:** Instructions on how to contribute to the SDK.
 
@@ -520,19 +520,17 @@ Now, let's organize the documentation for the "Simple File Storage API" into a c
 
 - Welcome to the Simple File Storage API
 
-- Overview of Features
+- Overview of features
 
-- Target Audience
+### Getting started
 
-### Getting Started
+- Prerequisites
 
-- **Prerequisites**
-
-Obtaining an API Key
+- Obtaining an API Key
 
 - Environment Setup (Python example)
 
-- **Quick Start Tutorial**
+### Quick start tutorial
 
 Step 1: Uploading Your First File (Code Example)
 
@@ -540,31 +538,31 @@ Step 1: Uploading Your First File (Code Example)
 
 - Step 3: Deleting the File (Code Example)
 
-- Troubleshooting Common Issues
+- Troubleshooting common issues
 
 - Next Steps
 
-### Conceptual Guides
+### Conceptual guides
 
-- **File Organization**
+- File Organization
 
-Understanding Storage Structure
+- Understanding Storage Structure
 
 - Naming Conventions
 
-- **Security**
+### Security
 
-Data Encryption
+- Data Encryption
 
 - Access Control
 
-- **Performance**
+### Performance
 
-Handling Large Files
+- Handling large files
 
-- Efficient Retrieval
+- Efficient retrieval
 
-- **Error Handling**
+### Error Handling
 
 - API Error Codes
 
@@ -572,17 +570,15 @@ Handling Large Files
 
 ### API Reference
 
-- **Authentication**
+- Authentication
 
-API Key Authentication
+- API Key Authentication
 
 - Authorization Header
 
-- **Base URL**
+- Base URL
 
-`https://api.simplestorage.com/v1`
-
-- **Endpoints**
+- Endpoints
 
 **Upload File (POST /files)**
 
@@ -598,7 +594,7 @@ Description
 
 - Error Responses
 
-- **Get File (GET /files/{fileId})**
+**Get File (GET /files/{fileId})**
 
 Description
 
@@ -612,7 +608,7 @@ Description
 
 - Error Responses
 
-- **Delete File (DELETE /files/{fileId})**
+**Delete File (DELETE /files/{fileId})**
 
 Description
 
@@ -626,9 +622,9 @@ Description
 
 - Error Responses
 
-- **Data Types**
+**Data Types**
 
-`fileId`
+- `fileId`
 
 - `fileName`
 
@@ -636,17 +632,17 @@ Description
 
 ### SDK Documentation
 
-- **Python SDK**
+**Python SDK**
 
 **Installation**
 
 `pip install simple-file-storage-sdk`
 
-- **API Client Initialization**
+**API Client Initialization**
 
 Code Example
 
-- **Upload File (upload_file method)**
+**Upload File (upload_file method)**
 
 Description
 
@@ -658,7 +654,7 @@ Description
 
 - Error Handling
 
-- **Get File (get_file method)**
+**Get File (get_file method)**
 
 Description
 
@@ -670,7 +666,7 @@ Description
 
 - Error Handling
 
-- **Delete File (delete_file method)**
+**Delete File (delete_file method)**
 
 Description
 
@@ -682,25 +678,25 @@ Description
 
 - Error Handling
 
-- **Error Handling (Exceptions)**
+**Error Handling (Exceptions)**
 
 Code Examples
 
-- **Advanced Usage**
+**Advanced Usage**
 
-Custom Timeouts
+- Custom Timeouts
 
 - Logging
 
-- **Contributing**
+**Contributing**
 
 GitHub Repository
 
-- **Release Notes/Changelog**
+**Release Notes/Changelog**
 
 Version History
 
-- **(Add other SDKs here, e.g., JavaScript SDK, Java SDK)**
+**(Add other SDKs here, e.g., JavaScript SDK, Java SDK)**
 
 **Use Cases/Recipes**
 
@@ -738,7 +734,7 @@ Version History
 
 **Key organizational principles:**
 
-- **Logical Flow:** The documentation follows a logical progression, starting with an introduction and getting started guide, moving to conceptual explanations, then diving into the API reference and SDK documentation, and finally providing use cases and FAQs.
+- **Logical flow:** The documentation follows a logical progression, starting with an introduction and getting started guide, moving to conceptual explanations, then diving into the API reference and SDK documentation, and finally providing use cases and FAQs.
 
 - **Clear hierarchy:** Headings and subheadings create a clear hierarchy, making it easy to navigate.
 
