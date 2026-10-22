@@ -1,6 +1,6 @@
 ---
 title: "REST API - Weather API Service"
-date: 2027-10-21T10:50:40+00:00
+date: 2026-10-21T10:50:40+00:00
 draft: false
 ---
 
@@ -12,7 +12,7 @@ draft: false
 - [Get wind conditions at a location](https://entwineinwords.wordpress.com/2019/02/27/rest-api-call-to-get-weather-and-wind-updates-from-a-weather-api-service/#4-get-wind-conditions-at-a-location)
 - [Final output](https://entwineinwords.wordpress.com/2019/02/27/rest-api-call-to-get-weather-and-wind-updates-from-a-weather-api-service/#5-final-output)
 
-## **Introduction**
+## Introduction
 
 This page documents a sample REST API call to get weather and wind updates from a Weather API Service.
 
@@ -24,7 +24,7 @@ APIs are similar to Web services. Web services are web-based applications that h
 
 **Representational State Transfer (REST)** uses HTTP as the protocol for the message request and response. REST APIs are called RESTFul APIs.
 
-## **Overview of REST**
+## Overview of REST
 
 - REST APIs are different from its predecessor SOAP.
 
@@ -36,13 +36,13 @@ APIs are similar to Web services. Web services are web-based applications that h
 
 - When a system makes a request, a response is generated.
 
-The below diagram shows the request from a client when the URL is typed on the browser and the response is returned in either XML or JSON format.
+The following diagram shows the request from a client when the URL is typed on the browser and the response is returned in either XML or JSON format.
 
 ![](/images/rest-api-weather-api-service/restarch.png)
 
 Image source: [https://idratherbewriting.com/learnapidoc/docapis_what_is_a_rest_api.html](https://entwineinwords.wordpress.com/blog/)
 
-## **Get weather conditions for a location**
+## Get weather conditions for a location
 
 This endpoint retrieves the weather conditions for a specified location.
 
@@ -52,13 +52,13 @@ This endpoint retrieves the weather conditions for a specified location.
 
 **Authorization**
 
-Sign up to get the API Key from the openweathermap API service. 
+Sign up to get the API Key from the `openweathermap API` service. 
 
 We will use the `appid` to authorize the OpenWeatherMap API to consume the service.
 
 **Request**
 
-```
+```bash
 `https://api.openweathermap.org/data/2.5/weather?zip=75098&units=imperial&appid=2ac115d3bf152bd58d446dcf3b07ea55`
 ```
 
@@ -70,7 +70,7 @@ API key is a secret code that you need beforehand.
 
 **Curl Request**
 
-```
+```bash
 `curl -X 'GET' \
   'https://api.openweathermap.org/data/2.5/weather?zip=75098&units=imperial&lang=en&mode=json&appid=2ac115d3bf152bd58d446dcf3b07ea55' \
   -H 'accept: application/json'`
@@ -82,7 +82,7 @@ Type the above curl script in your terminal and observe the response.
 
 The response returned is a JSON object or a payload with key-value pairs.
 
-```
+```json
 `{
   "coord": {
     "lon": -96.5394,
@@ -136,7 +136,7 @@ The screenshot shows a sample HTML file where the GET request is invoked to get 
 
 ![](/images/rest-api-weather-api-service/weatherapi.png)
 
-## **Get wind conditions at a location**
+## Get wind conditions at a location
 
 This endpoint retrieves the wind conditions for the zip code and country code.
 
@@ -146,17 +146,17 @@ This endpoint retrieves the wind conditions for the zip code and country code.
 
 **Request**
 
-```
+```bash
 `https://api.openweathermap.org/data/2.5/weather?zip=75098,us&appid=2ac115d3bf152bd58d446dcf3b07ea55&units=imperial`
 ```
 
 **Input parameter**
 
-API key and the zip code of the place and the country code.
+API key, the zip code of the place, and the country code.
 
 **Response**
 
-```
+```json
 `{
   "coord": {
     "lon": -99.2506,
@@ -209,7 +209,7 @@ The screenshot shows a sample HTML file where the GET request is invoked to get 
 
 ![](/images/rest-api-weather-api-service/weatherapi.png)
 
-## **Final output**
+## Final output
 
 When you open the browser and run the HTML file, the page is loaded as follows:
 
@@ -221,4 +221,4 @@ The UI response after the button click.
 
 ![](/images/rest-api-weather-api-service/windafter.png)
 
-This shows how we can make REST API calls to get the desired output. REST is easy to learn, it is not tied to a programming language and can run on any platform.
+This shows how we can make REST API calls to get the desired output. REST is easy to learn; it is not tied to a programming language and can run on any platform.
