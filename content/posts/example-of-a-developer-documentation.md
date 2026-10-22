@@ -187,71 +187,67 @@ API reference is a crucial part, but developer documentation encompasses much mo
 
 - **Purpose:** To guide new users through their first steps with the API.
 
-- **Content:**
+- **Content:** Welcome to the Simple File Storage API!
 
-"Welcome to the Simple File Storage API!"
+- Prerequisites: API Key (How to Obtain One)
 
-- "Prerequisites: API Key (How to Obtain One)"
+- Step 1: Setting up your environment (installing necessary libraries and tools)
 
-- "Step 1: Setting up your environment (installing necessary libraries and tools)"
+- Step 2: Uploading your first file (with code examples)
 
-- "Step 2: Uploading your first file (with code examples)"
+- Step 3: Retrieving the uploaded file
 
-- "Step 3: Retrieving the uploaded file"
+- Step 4: Deleting the file
 
-- "Step 4: Deleting the file"
+- Troubleshooting common issues
 
-- "Troubleshooting Common Issues"
+- Next steps: Exploring advanced features
 
-- "Next Steps: Exploring Advanced Features"
-
-## Concepts and Guides
+## Concepts and guides
 
 - **Purpose:** To explain the underlying concepts and best practices for using the API.
 
 - **Content:**
 
-## File Organization
+## File organization
 
-"Understanding File Storage Structure"
+- Understanding File Storage Structure
 
-- "Best Practices for Naming Files"
+- Best Practices for Naming Files
 
-## Security Considerations
+## Security considerations
 
-- "Data Encryption and Privacy"
+- Data Encryption and Privacy
 
-- "Access Control and Permissions"
+- "Access Control and Permissions
 
-## Performance Optimization
+## Performance optimization
 
-- "Handling Large Files"
+- Handling Large Files
 
-- "Efficient File Retrieval"
+- Efficient File Retrieval
 
-## Error Handling and Retry Logic
+## Error handling and retry Logic
 
-- "How to deal with API errors"
+- How to deal with API errors
 
-- "Best practices for retry logic"
+- Best practices for retry logic
 
 ## SDK Documentation (if applicable)
 
 - **Purpose:** To provide detailed information on using the official SDKs (Software Development Kits).
 
-- **Content:**
+- **Content:** Installation Instructions
 
-"Installation Instructions"
+- API Client Initialization
 
-- "API Client Initialization"
+- Detailed Function/Method Reference
 
-- "Detailed Function/Method Reference"
+- Code Examples for Common Use Cases
 
-- "Code Examples for Common Use Cases"
+- Troubleshooting SDK issues
 
-- "Troubleshooting SDK issues"
-
-- "Examples for all available languages"
+- Examples for all available languages
 
 ## Use Case Examples/Recipes
 
@@ -261,35 +257,31 @@ API reference is a crucial part, but developer documentation encompasses much mo
 
 ## Image Upload and Hosting
 
-"Using the API for image storage in a web application."
+- Using the API for image storage in a web application.
 
 - **Document Backup:**
-
-"Automating document backups to the cloud."
+  Automating document backups to the cloud.
 
 - **Log File Storage:**
-
-"Storing and retrieving application log files."
+  Storing and retrieving application log files.
 
 - **Data Archiving:**
+  Archiving old data to the cloud.
 
-"Archiving old data to the cloud."
-
-**5. Release Notes/Changelog:**
+**Release Notes/Changelog:**
 
 - **Purpose:** To keep developers informed of API changes and updates.
 
 - **Content:**
+- Version History
 
-"Version History"
+- New Features and Enhancements
 
-- "New Features and Enhancements"
+- Bug Fixes
 
-- "Bug Fixes"
+- Deprecation Notices
 
-- "Deprecation Notices"
-
-- "Migration Guides (if applicable)"
+- Migration Guides (if applicable)
 
 ## FAQ
 
@@ -297,25 +289,21 @@ API reference is a crucial part, but developer documentation encompasses much mo
 
 - **Content:**
 
-"How do I obtain an API key?"
+- How do I obtain an API key?
 
-- "What file formats are supported?"
+- What file formats are supported?
 
-- "What are the size limits for uploaded files?"
+- What are the size limits for uploaded files?
 
-- "How do I handle rate limiting?"
+- How do I handle rate limiting?
 
-- "Is my data secure?"
+- Is my data secure?
 
 ## Interactive Examples/Playground:**
 
 - **Purpose:** To allow developers to experiment with the API in a sandbox environment.
 
-- **Content:**
-
-An interactive console or web interface where developers can send API requests and view responses.
-
-- This is very helpful for testing quickly.
+- **Content:** An interactive console or web interface where developers can send API requests and view responses.
 
 ### Key considerations for all developer documentation
 
@@ -352,7 +340,7 @@ pip install simple-file-storage-sdk
 
 ```
 
-### API Client Initialization**
+### API client initialization**
 
 To use the SDK, you need to initialize an `ApiClient` instance with your API key:
 
@@ -407,7 +395,6 @@ The SDK raises exceptions for API errors (e.g., `UnauthorizedError`, `BadRequest
 - **Description:** Retrieves a file from the storage system.
 
 - **Usage:**
-
 
 
 ```Python
