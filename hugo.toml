@@ -31,18 +31,22 @@ theme = "PaperMod"
   [[menu.main]]
     name = "About"
     url = "/about-me/"
-    weight = 2
+    weight = 2  
+  [[menu.main]]
+    name = "API Reference"
+    url = "/posts/api-reference/"
+    weight = 3
+  [[menu.main]]
+    name = "How-to"
+    url = "/posts/how-to/"
+    weight = 4
+  [[menu.main]]
+    name = "Conceptual"
+    url = "/conceptual/"
+    weight = 4
   [[menu.main]]
     name = "Services"
     url = "/services/"
-    weight = 3
-  [[menu.main]]
-    name = "API Reference"
-    url = "/api-reference/"
-    weight = 4
-  [[menu.main]]
-    name = "Resources"
-    url = "/resources/"
     weight = 5
 
 [outputs]
