@@ -157,7 +157,7 @@ API key, the zip code of the place, and the country code.
 **Response**
 
 ```json
-`{
+{
   "coord": {
     "lon": -99.2506,
     "lat": 31.2504
@@ -202,7 +202,7 @@ API key, the zip code of the place, and the country code.
   "id": 4736286,
   "name": "Texas",
   "cod": 200
-}`
+}
 ```
 
 The screenshot shows a sample HTML file where the GET request is invoked to get the wind conditions.
