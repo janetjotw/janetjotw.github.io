@@ -38,17 +38,18 @@ All API requests require an API key to be included in the `Authorization` header
 
     `file`: The file to upload.
 
-- **Response (201 Created):**
+#### Response (201 Created)
 
 ```json
 { "fileId": "unique-file-id", "fileName": "uploaded-file.txt", "fileUrl": "https://storage.simplestorage.com/unique-file-id" }
 ```
 
-- **Example Request (using `curl`):**
+#### Example Request (using `curl`)
 
 ```bash
     curl -X POST \ "https://api.simplestorage.com/v1/files" \ -H "Authorization: Bearer YOUR_API_KEY" \ -F "file=@/path/to/your/file.txt"
 ```
+
 #### Error Responses
 
 - `400 Bad Request`: Invalid file format or size.
@@ -69,11 +70,11 @@ All API requests require an API key to be included in the `Authorization` header
 
 `fileId`: The unique ID of the file.
 
-- **Response (200 OK):**
+#### Response (200 OK)
 
 The file content.
 
-- **Example Request (using `curl`):**
+#### Example Request (using `curl`)
 
 ```bash
 curl -X GET \ "https://api.simplestorage.com/v1/files/unique-file-id" \ -H "Authorization: Bearer YOUR_API_KEY"
@@ -99,11 +100,11 @@ curl -X GET \ "https://api.simplestorage.com/v1/files/unique-file-id" \ -H "Auth
 
 `fileId`: The unique ID of the file.
 
-- **Response (204 No Content):**
+#### Response (204 No Content)
 
 (No response body)
 
-- **Example Request (using `curl`):**
+#### Example Request (using `curl`)
 
 ```bash
     curl -X DELETE \ "https://api.simplestorage.com/v1/files/unique-file-id" \ -H "Authorization: Bearer YOUR_API_KEY"
