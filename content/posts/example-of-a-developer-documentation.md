@@ -1,24 +1,24 @@
 ---
-title: "Example of a Developer documentation"
-date: 2025-03-25T09:07:01+00:00
-draft: true
+title: "Example of developer documentation"
+date: 2026-10-22T09:07:01+00:00
+draft: false
 ---
 
-Let's create an example of developer documentation for a hypothetical "Simple File Storage API." This will demonstrate how to structure information for developers to easily understand and use the API.
+This page provides an example of developer documentation for a hypothetical **Simple File Storage API.** The page shows how to structure information so developers can easily understand and use the API.
 
-**Simple File Storage API Documentation**
+# Simple File Storage API Documentation
 
-**1. Introduction**
+## Introduction
 
 The Simple File Storage API allows developers to store, retrieve, and delete files in a cloud-based storage system. This API is designed for applications that require basic file storage capabilities.
 
-**2. Base URL**
+### Base URL
 
 ```
 `[https://api.simplestorage.com/v1](https://api.simplestorage.com/v1)`
 ```
 
-**3. Authentication**
+### Authentication
 
 All API requests require an API key to be included in the `Authorization` header.
 
@@ -26,9 +26,9 @@ All API requests require an API key to be included in the `Authorization` header
 `Authorization: Bearer YOUR_API_KEY`
 ```
 
-**4. Endpoints**
+## Endpoints
 
-**4.1. Upload File (POST /files)**
+### Upload File (POST /files)
 
 - **Description:** Uploads a new file to the storage system.
 
@@ -36,21 +36,28 @@ All API requests require an API key to be included in the `Authorization` header
 
 - **Request Body:**
 
-`file`: The file to upload.
+    `file`: The file to upload.
 
-- **Response (201 Created):** JSON`{ "fileId": "unique-file-id", "fileName": "uploaded-file.txt", "fileUrl": "https://storage.simplestorage.com/unique-file-id" }`
+- **Response (201 Created):**
 
-- **Example Request (using `curl`):** Bash`curl -X POST \ "https://api.simplestorage.com/v1/files" \ -H "Authorization: Bearer YOUR_API_KEY" \ -F "file=@/path/to/your/file.txt"`
+```json
+{ "fileId": "unique-file-id", "fileName": "uploaded-file.txt", "fileUrl": "https://storage.simplestorage.com/unique-file-id" }
+```
 
+- **Example Request (using `curl`):**
+
+```bash
+    curl -X POST \ "https://api.simplestorage.com/v1/files" \ -H "Authorization: Bearer YOUR_API_KEY" \ -F "file=@/path/to/your/file.txt"
+```
 - **Error Responses:**
 
-`400 Bad Request`: Invalid file format or size.
+- `400 Bad Request`: Invalid file format or size.
 
 - `401 Unauthorized`: Invalid API key.
 
 - `500 Internal Server Error`: Server-side error.
 
-**4.2. Get File (GET /files/{fileId})**
+### Get File (GET /files/{fileId})
 
 - **Description:** Retrieves a file from the storage system.
 
@@ -66,17 +73,21 @@ All API requests require an API key to be included in the `Authorization` header
 
 The file content.
 
-- **Example Request (using `curl`):** Bash`curl -X GET \ "https://api.simplestorage.com/v1/files/unique-file-id" \ -H "Authorization: Bearer YOUR_API_KEY"`
+- **Example Request (using `curl`):**
+
+```bash
+curl -X GET \ "https://api.simplestorage.com/v1/files/unique-file-id" \ -H "Authorization: Bearer YOUR_API_KEY"
+```
 
 - **Error Responses:**
 
-`401 Unauthorized`: Invalid API key.
+- `401 Unauthorized`: Invalid API key.
 
 - `404 Not Found`: File not found.
 
 - `500 Internal Server Error`: Server-side error.
 
-**4.3. Delete File (DELETE /files/{fileId})**
+### Delete File (DELETE /files/{fileId})
 
 - **Description:** Deletes a file from the storage system.
 
@@ -92,17 +103,20 @@ The file content.
 
 (No response body)
 
-- **Example Request (using `curl`):** Bash`curl -X DELETE \ "https://api.simplestorage.com/v1/files/unique-file-id" \ -H "Authorization: Bearer YOUR_API_KEY"`
+- **Example Request (using `curl`):**
 
+```bash
+    curl -X DELETE \ "https://api.simplestorage.com/v1/files/unique-file-id" \ -H "Authorization: Bearer YOUR_API_KEY"
+```
 - **Error Responses:**
 
-`401 Unauthorized`: Invalid API key.
+- `401 Unauthorized`: Invalid API key.
 
 - `404 Not Found`: File not found.
 
 - `500 Internal Server Error`: Server-side error.
 
-**5. Data Types**
+### Data Types
 
 - **`fileId`:** A unique string identifier for a file.
 
@@ -110,11 +124,9 @@ The file content.
 
 - **`fileUrl`:** The URL to access the stored file.
 
-**6. Code Samples (Python)**
+### Code Samples (Python)
 
-Python
-
-```
+```python
 import requests
 
 API_KEY = "YOUR_API_KEY"
@@ -148,29 +160,28 @@ print(f"Delete Status: {delete_status}")
 
 ```
 
-**Key Elements Demonstrated:**
+#### Key elements demonstrated
 
-- **Clear Structure:** Using headings and subheadings for easy navigation.
+- **Clear structure:** Using headings and subheadings for easy navigation.
 
-- **Endpoint Documentation:** Describing each endpoint with its purpose, request/response formats, and examples.
+- **Endpoint documentation:** Describing each endpoint with its purpose, request/response formats, and examples.
 
-- **Code Examples:** Providing practical code snippets in a common programming language (Python).
+- **Code examples:** Providing practical code snippets in a common programming language (Python).
 
-- **Error Handling:** Documenting potential error responses and their meanings.
+- **Error handling:** Documenting potential error responses and their meanings.
 
-- **Data Type Definitions:** Explaining the data types used in the API.
+- **Data type definitions:** Explaining the data types used in the API.
 
-- **Authentication Details:** Clearly stating the authentication method.
+- **Authentication details:** Clearly stating the authentication method.
 
-- **Base URL:** providing the base URL that all requests use.
+- **Base URL:** Providing the base URL that all requests use.
 
-This example provides a foundation for creating developer documentation. Remember to adapt it to your specific API and target audience.
+This example provides a foundation for creating developer documentation. Adapt it to your specific API and target audience.
 
-But this was an example of an API Reference documentation. What else can you show me as a developer doc?
 
-You're absolutely right. API reference is a crucial part, but developer documentation encompasses much more. Let's expand on the "Simple File Storage API" example to include other essential elements:
+API reference is a crucial part, but developer documentation encompasses much more. Let's expand on the **Simple File Storage API** example to include other essential elements:
 
-**1. Getting Started Guide (Tutorial/Walkthrough):**
+## Getting Started Guide (Tutorial/Walkthrough)
 
 - **Purpose:** To guide new users through their first steps with the API.
 
@@ -180,7 +191,7 @@ You're absolutely right. API reference is a crucial part, but developer document
 
 - "Prerequisites: API Key (How to Obtain One)"
 
-- "Step 1: Setting up your environment (installing necessary libraries, tools)"
+- "Step 1: Setting up your environment (installing necessary libraries and tools)"
 
 - "Step 2: Uploading your first file (with code examples)"
 
@@ -192,37 +203,37 @@ You're absolutely right. API reference is a crucial part, but developer document
 
 - "Next Steps: Exploring Advanced Features"
 
-**2. Concepts and Guides:**
+## Concepts and Guides
 
 - **Purpose:** To explain the underlying concepts and best practices for using the API.
 
 - **Content:**
 
-**File Organization:**
+## File Organization
 
 "Understanding File Storage Structure"
 
 - "Best Practices for Naming Files"
 
-- **Security Considerations:**
+## Security Considerations
 
 - "Data Encryption and Privacy"
 
 - "Access Control and Permissions"
 
-- **Performance Optimization:**
+## Performance Optimization
 
 - "Handling Large Files"
 
 - "Efficient File Retrieval"
 
-- **Error Handling and Retry Logic:**
+## Error Handling and Retry Logic
 
 - "How to deal with API errors"
 
 - "Best practices for retry logic"
 
-**3. SDK Documentation (If applicable):**
+## SDK Documentation (if applicable)
 
 - **Purpose:** To provide detailed information on using the official SDKs (Software Development Kits).
 
@@ -240,13 +251,13 @@ You're absolutely right. API reference is a crucial part, but developer document
 
 - "Examples for all available languages"
 
-**4. Use Case Examples/Recipes:**
+## Use Case Examples/Recipes
 
 - **Purpose:** To demonstrate how to use the API for specific real-world scenarios.
 
 - **Content:**
 
-**Image Upload and Hosting:**
+## Image Upload and Hosting
 
 "Using the API for image storage in a web application."
 
@@ -278,7 +289,7 @@ You're absolutely right. API reference is a crucial part, but developer document
 
 - "Migration Guides (if applicable)"
 
-**6. FAQ (Frequently Asked Questions):**
+## FAQ
 
 - **Purpose:** To address common questions and concerns.
 
@@ -294,7 +305,7 @@ You're absolutely right. API reference is a crucial part, but developer document
 
 - "Is my data secure?"
 
-**7. Interactive Examples/Playground:**
+## Interactive Examples/Playground:**
 
 - **Purpose:** To allow developers to experiment with the API in a sandbox environment.
 
@@ -302,56 +313,50 @@ You're absolutely right. API reference is a crucial part, but developer document
 
 An interactive console or web interface where developers can send API requests and view responses.
 
-- This is very helpful to test quickly.
+- This is very helpful for testing quickly.
 
-**Key Considerations for All Developer Documentation:**
+### Key considerations for all developer documentation
 
-- **Target Audience:** Write for your specific audience (e.g., beginners, experienced developers).
+- **Target audience:** Write for your specific audience (e.g., beginners, experienced developers).
 
-- **Clarity and Consistency:** Use clear, concise language and maintain a consistent style.
+- **Clarity and consistency:** Use clear, concise language and maintain a consistent style.
 
-- **Code Examples:** Provide plenty of well-commented code examples.
-
-- **Up-to-Date Information:** Keep the documentation current with the latest API changes.
+- **Code examples:** Provide plenty of well-commented code examples.
 
 - **Searchability:** Make the documentation easy to search and navigate.
 
-- **Feedback Mechanism:** Provide a way for developers to provide feedback.
+- **Feedback mechanism:** Provide a way for developers to provide feedback.
 
-- **Version Control:** Use version control for your documentation.
+- **Version control:** Use version control for your documentation.
 
 - **Hosting:** Host the documentation on a reliable platform.
 
 By providing comprehensive developer documentation, you can make it easier for developers to use your API and build successful integrations.
 
-Can you give me an example on this? SDK Documentation (If applicable):
+Now, create an example of SDK documentation for our "Simple File Storage API," focusing on a hypothetical Python SDK.
 
-Alright, let's create an example of SDK documentation for our "Simple File Storage API," focusing on a hypothetical Python SDK.
+## Simple File Storage API Python SDK Documentation
 
-**Simple File Storage API Python SDK Documentation**
-
-**1. Introduction**
+### Introduction
 
 The Simple File Storage API Python SDK provides a convenient way to interact with the Simple File Storage API from your Python applications. This SDK handles authentication, request formatting, and error handling, allowing you to focus on your application logic.
 
-**2. Installation**
+### Installation
 
 Install the SDK using pip:
 
-Bash
-
-```
+```Bash
 pip install simple-file-storage-sdk
 
 ```
 
-**3. API Client Initialization**
+### API Client Initialization**
 
 To use the SDK, you need to initialize an `ApiClient` instance with your API key:
 
-Python
 
-```
+
+```Python
 from simple_file_storage_sdk import ApiClient
 
 api_key = "YOUR_API_KEY"
@@ -359,15 +364,15 @@ client = ApiClient(api_key)
 
 ```
 
-**4. Upload File (upload_file method)**
+### Upload File (upload_file method)
 
 - **Description:** Uploads a file to the storage system.
 
 - **Usage:**
 
-Python
 
-```
+
+```Python
 file_path = "path/to/your/file.txt"
 response = client.upload_file(file_path)
 
@@ -395,15 +400,15 @@ else:
 
 The SDK raises exceptions for API errors (e.g., `UnauthorizedError`, `BadRequestError`).
 
-**5. Get File (get_file method)**
+### Get File (get_file method)**
 
 - **Description:** Retrieves a file from the storage system.
 
 - **Usage:**
 
-Python
 
-```
+
+```Python
 file_id = "unique-file-id"
 file_content = client.get_file(file_id)
 
@@ -428,15 +433,13 @@ else:
 
 The SDK raises exceptions for API errors (e.g., `UnauthorizedError`, `NotFoundError`).
 
-**6. Delete File (delete_file method)**
+### Delete File (delete_file method)
 
 - **Description:** Deletes a file from the storage system.
 
 - **Usage:**
 
-Python
-
-```
+```Python
 file_id = "unique-file-id"
 success = client.delete_file(file_id)
 
@@ -461,13 +464,12 @@ else:
 
 The SDK raises exceptions for API errors (e.g., `UnauthorizedError`, `NotFoundError`).
 
-**7. Error Handling (Exceptions)**
+### Error Handling (Exceptions)
 
 The SDK defines custom exceptions for API errors. You can catch these exceptions to handle errors gracefully:
 
-Python
 
-```
+```Python
 from simple_file_storage_sdk.exceptions import UnauthorizedError, NotFoundError, BadRequestError
 
 try:
@@ -481,13 +483,12 @@ except BadRequestError as e:
 
 ```
 
-**8. Advanced Usage**
+### Advanced Usage
 
-- **Custom Timeouts:**
+- **Custom timeouts:**
 
-Python
 
-```
+```Python
 client = ApiClient(api_key, timeout=10) # Set timeout to 10 seconds.
 
 ```
@@ -496,39 +497,37 @@ client = ApiClient(api_key, timeout=10) # Set timeout to 10 seconds.
 
 The SDK uses the standard Python `logging` module. You can configure logging to capture SDK logs.
 
-**9. Contributing**
+### Contributing
 
 - If you find a bug or want to contribute a feature, please submit an issue or pull request on the SDK's GitHub repository.
 
-**10. Release Notes/Changelog**
+### Release Notes/Changelog**
 
 - (Include a section with version history and changes.)
 
-**Key Aspects Demonstrated:**
+**Key aspects demonstrated:**
 
 - **Installation:** Clear instructions on how to install the SDK.
 
 - **Initialization:** How to set up the API client.
 
-- **Method Documentation:** Detailed documentation for each method, including parameters, return values, and error handling.
+- **Method documentation:** Detailed documentation for each method, including parameters, return values, and error handling.
 
-- **Code Examples:** Practical code examples for common use cases.
+- **Code examples:** Practical code examples for common use cases.
 
-- **Error Handling:** Information on how to handle API errors using exceptions.
+- **Error handling:** Information on how to handle API errors using exceptions.
 
 - **Advanced Usage:** Examples of advanced features and customization options.
 
-- **Contribution Guidelines:** Instructions on how to contribute to the SDK.
+- **Contribution guidelines:** Instructions on how to contribute to the SDK.
 
 This SDK documentation example provides a comprehensive guide for developers using the Python SDK for the Simple File Storage API. Remember to adapt it to your specific SDK and target audience.
 
-Now can you structure all this to showcase organization? That is, API Reference, Getting Started, Conceptual, SDK?
+Now, let's organize the documentation for the "Simple File Storage API" into a clear, structured format, demonstrating how you would typically arrange these different sections in a real-world developer portal.
 
-Absolutely. Let's organize the documentation for the "Simple File Storage API" into a clear, structured format, demonstrating how you would typically arrange these different sections in a real-world developer portal.
+## Simple File Storage API Documentation
 
-**Simple File Storage API Documentation**
-
-**I. Introduction**
+### Introduction
 
 - Welcome to the Simple File Storage API
 
@@ -536,15 +535,15 @@ Absolutely. Let's organize the documentation for the "Simple File Storage API" i
 
 - Target Audience
 
-**II. Getting Started**
+### Getting Started
 
-- **2.1. Prerequisites**
+- **Prerequisites**
 
 Obtaining an API Key
 
 - Environment Setup (Python example)
 
-- **2.2. Quick Start Tutorial**
+- **Quick Start Tutorial**
 
 Step 1: Uploading Your First File (Code Example)
 
@@ -556,47 +555,47 @@ Step 1: Uploading Your First File (Code Example)
 
 - Next Steps
 
-**III. Conceptual Guides**
+### Conceptual Guides
 
-- **3.1. File Organization**
+- **File Organization**
 
 Understanding Storage Structure
 
 - Naming Conventions
 
-- **3.2. Security**
+- **Security**
 
 Data Encryption
 
 - Access Control
 
-- **3.3. Performance**
+- **Performance**
 
 Handling Large Files
 
 - Efficient Retrieval
 
-- **3.4. Error Handling**
+- **Error Handling**
 
-API Error Codes
+- API Error Codes
 
 - Retry Logic
 
-**IV. API Reference**
+### API Reference
 
-- **4.1. Authentication**
+- **Authentication**
 
 API Key Authentication
 
 - Authorization Header
 
-- **4.2. Base URL**
+- **Base URL**
 
 `https://api.simplestorage.com/v1`
 
-- **4.3. Endpoints**
+- **Endpoints**
 
-**4.3.1. Upload File (POST /files)**
+**Upload File (POST /files)**
 
 Description
 
@@ -610,7 +609,7 @@ Description
 
 - Error Responses
 
-- **4.3.2. Get File (GET /files/{fileId})**
+- **Get File (GET /files/{fileId})**
 
 Description
 
@@ -624,7 +623,7 @@ Description
 
 - Error Responses
 
-- **4.3.3. Delete File (DELETE /files/{fileId})**
+- **Delete File (DELETE /files/{fileId})**
 
 Description
 
@@ -638,7 +637,7 @@ Description
 
 - Error Responses
 
-- **4.4. Data Types**
+- **Data Types**
 
 `fileId`
 
@@ -646,19 +645,19 @@ Description
 
 - `fileUrl`
 
-**V. SDK Documentation**
+### SDK Documentation
 
-- **5.1. Python SDK**
+- **Python SDK**
 
-**5.1.1. Installation**
+**Installation**
 
 `pip install simple-file-storage-sdk`
 
-- **5.1.2. API Client Initialization**
+- **API Client Initialization**
 
 Code Example
 
-- **5.1.3. Upload File (upload_file method)**
+- **Upload File (upload_file method)**
 
 Description
 
@@ -670,7 +669,7 @@ Description
 
 - Error Handling
 
-- **5.1.4. Get File (get_file method)**
+- **Get File (get_file method)**
 
 Description
 
@@ -682,7 +681,7 @@ Description
 
 - Error Handling
 
-- **5.1.5. Delete File (delete_file method)**
+- **Delete File (delete_file method)**
 
 Description
 
@@ -694,27 +693,27 @@ Description
 
 - Error Handling
 
-- **5.1.6. Error Handling (Exceptions)**
+- **Error Handling (Exceptions)**
 
 Code Examples
 
-- **5.1.7. Advanced Usage**
+- **Advanced Usage**
 
 Custom Timeouts
 
 - Logging
 
-- **5.1.8. Contributing**
+- **Contributing**
 
 GitHub Repository
 
-- **5.1.9. Release Notes/Changelog**
+- **Release Notes/Changelog**
 
 Version History
 
 - **(Add other SDKs here, e.g., JavaScript SDK, Java SDK)**
 
-**VI. Use Cases/Recipes**
+**Use Cases/Recipes**
 
 - Image Upload and Hosting
 
@@ -724,7 +723,7 @@ Version History
 
 - Data Archiving
 
-**VII. FAQ**
+**FAQ**
 
 - How do I obtain an API key?
 
@@ -736,7 +735,7 @@ Version History
 
 - Is my data secure?
 
-**VIII. Release Notes/Changelog**
+**Release Notes/Changelog**
 
 - Version History
 
@@ -748,15 +747,15 @@ Version History
 
 - Migration Guides
 
-**Key Organizational Principles:**
+**Key organizational principles:**
 
 - **Logical Flow:** The documentation follows a logical progression, starting with an introduction and getting started guide, moving to conceptual explanations, then diving into the API reference and SDK documentation, and finally providing use cases and FAQs.
 
-- **Clear Hierarchy:** Headings and subheadings create a clear hierarchy, making it easy to navigate.
+- **Clear hierarchy:** Headings and subheadings create a clear hierarchy, making it easy to navigate.
 
-- **Dedicated Sections:** Each major section (Getting Started, Conceptual, API Reference, SDK) is clearly separated.
+- **Dedicated sections:** Each major section (Getting Started, Conceptual, API Reference, SDK) is clearly separated.
 
-- **Code Examples:** Code examples are integrated throughout the documentation to illustrate concepts and usage.
+- **Code examples:** Code examples are integrated throughout the documentation to illustrate concepts and usage.
 
 - **Consistency:** Consistent formatting and language are used throughout.
 
