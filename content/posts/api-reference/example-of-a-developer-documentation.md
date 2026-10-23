@@ -15,7 +15,7 @@ The Simple File Storage API allows developers to store, retrieve, and delete fil
 ### Base URL
 
 ```
-[https://api.simplestorage.com/v1](https://api.simplestorage.com/v1)
+https://api.simplestorage.com/v1
 ```
 
 ### Authentication
@@ -54,7 +54,7 @@ Authorization: Bearer YOUR_API_KEY
     curl -X POST \ "https://api.simplestorage.com/v1/files" \ -H "Authorization: Bearer YOUR_API_KEY" \ -F "file=@/path/to/your/file.txt"
 ```
 
-#### Error Responses
+#### Error Response
 
 - `400 Bad Request`: Invalid file format or size.
 
@@ -66,11 +66,11 @@ Authorization: Bearer YOUR_API_KEY
 
 - **Description:** Retrieves a file from the storage system.
 
-#### Request Headers
+#### Request Header
 
 `Authorization`: Your API key.
 
-- **Path Parameters:**
+#### Path Parameters
 
 `fileId`: The unique ID of the file.
 
@@ -84,7 +84,7 @@ The file content.
 curl -X GET \ "https://api.simplestorage.com/v1/files/unique-file-id" \ -H "Authorization: Bearer YOUR_API_KEY"
 ```
 
-#### Error Responses
+#### Error Response
 
 - `401 Unauthorized`: Invalid API key.
 
@@ -100,7 +100,7 @@ curl -X GET \ "https://api.simplestorage.com/v1/files/unique-file-id" \ -H "Auth
 
 `Authorization`: Your API key.
 
-- **Path Parameters:**
+#### Path Parameters
 
 `fileId`: The unique ID of the file.
 
@@ -130,7 +130,7 @@ curl -X GET \ "https://api.simplestorage.com/v1/files/unique-file-id" \ -H "Auth
 
 - **`fileUrl`:** The URL to access the stored file.
 
-### Code Samples (Python)
+### Code Sample (Python)
 
 ```python
 import requests
@@ -187,11 +187,14 @@ This example provides a foundation for creating developer documentation.
 
 API reference is a crucial part, but developer documentation encompasses much more. Let's expand on the **Simple File Storage API** example to include other essential elements:
 
-## Getting Started Guide (Tutorial/Walkthrough)
+## Getting started guide (Tutorial/Walkthrough)
 
-- **Purpose:** To guide new users through their first steps with the API.
+- **Purpose:** 
+To guide new users through their first steps with the API.
 
-- **Content:** Welcome to the Simple File Storage API.
+- **Content:** 
+
+Welcome to the Simple File Storage API.
 
 - **Prerequisites**:
   API Key
@@ -210,7 +213,8 @@ API reference is a crucial part, but developer documentation encompasses much mo
 
 ## Concepts and guides
 
-- **Purpose:** To explain the underlying concepts and best practices for using the API.
+- **Purpose:** 
+To explain the underlying concepts and best practices for using the API.
 
 - **Content:**
 
@@ -232,7 +236,7 @@ API reference is a crucial part, but developer documentation encompasses much mo
 
 - Efficient file retrieval
 
-## Error handling and retry Logic
+## Error handling and retry logic
 
 - How to deal with API errors
 
@@ -240,9 +244,12 @@ API reference is a crucial part, but developer documentation encompasses much mo
 
 ## SDK Documentation (if applicable)
 
-- **Purpose:** To provide detailed information on using the official SDKs (Software Development Kits).
+- **Purpose:** 
+To provide detailed information on using the official SDKs (Software Development Kits).
 
-- **Content:** Installation instructions
+- **Content:** 
+
+- Installation instructions
 
 - API client initialization
 
@@ -256,7 +263,8 @@ API reference is a crucial part, but developer documentation encompasses much mo
 
 ## Use Case Examples/Recipes
 
-- **Purpose:** To demonstrate how to use the API for specific real-world scenarios.
+- **Purpose:** 
+To demonstrate how to use the API for specific real-world scenarios.
 
 - **Content:**
 
@@ -275,7 +283,8 @@ API reference is a crucial part, but developer documentation encompasses much mo
 
 **Release Notes/Changelog:**
 
-- **Purpose:** To keep developers informed of API changes and updates.
+- **Purpose:** 
+  To keep developers informed of API changes and updates.
 
 - **Content:**
 
@@ -291,7 +300,8 @@ API reference is a crucial part, but developer documentation encompasses much mo
 
 ## FAQ
 
-- **Purpose:** To address common questions and concerns.
+- **Purpose:** 
+  To address common questions and concerns.
 
 - **Content:**
 
@@ -307,7 +317,8 @@ API reference is a crucial part, but developer documentation encompasses much mo
 
 ## Interactive examples/playground:**
 
-- **Purpose:** To allow developers to experiment with the API in a sandbox environment.
+- **Purpose:** 
+To allow developers to experiment with the API in a sandbox environment.
 
 - **Content:** An interactive console or web interface where developers can send API requests and view responses.
 
@@ -360,7 +371,8 @@ client = ApiClient(api_key)
 
 ### Upload file (upload_file method)
 
-- **Description:** Uploads a file to the storage system.
+- **Description:** 
+Uploads a file to the storage system.
 
 - **Usage:**
 
@@ -388,13 +400,14 @@ else:
 
 - `None` on failure.
 
-**Error Handling:**
+**Error handling:**
 
 The SDK raises exceptions for API errors (e.g., `UnauthorizedError`, `BadRequestError`).
 
 ### Get file (get_file method)**
 
-- **Description:** Retrieves a file from the storage system.
+- **Description:** 
+Retrieves a file from the storage system.
 
 - **Usage:**
 
