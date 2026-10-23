@@ -10,11 +10,11 @@ The use cases for configuring a webhook can include an IoT device sending locati
 
 The following steps provide instructions on how to install Python, Flask, and ngrok to receive webhook data.
 
-## Install Python
+## Step 1: Install Python
 
-Refer to [Python, Boto3, and AWS RDS](https://entwineinwords.wordpress.com/2022/08/13/python-boto3-and-aws-rds/), where I show how to install Python and check the installed version. You need Python 3.
+Refer to [Python, Boto3, and AWS RDS](https://janetjotw.github.io/posts/how-to/python-boto3-and-aws-rds/), where I show how to install Python and check the installed version. You need Python 3.
 
-## Install Flask
+## Step 2: Install Flask
 
 Use the Python package manager `pip` to install Flask.
 
@@ -22,7 +22,7 @@ Use the Python package manager `pip` to install Flask.
 pip install flask
 ```
 
-## Install ngrok
+## Step 3: Install ngrok
 
 ```bash
 brew install ngrok
@@ -30,7 +30,7 @@ brew install ngrok
 
 See the [ngrok downloads page](https://ngrok.com/downloads/windows) for your operating system.
 
-## Start server
+## Step 4: Start server
 
 Open another tab in your terminal and run the following command:
 
@@ -38,7 +38,7 @@ Open another tab in your terminal and run the following command:
 ngrok http 5000
 ```
 
-## Create a base application
+## Step5: Create a base application
 
 Now that your setup is ready, you'll create a Python app and run it to start the server.
 
