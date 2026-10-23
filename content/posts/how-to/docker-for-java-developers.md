@@ -26,17 +26,17 @@ Docker is an open platform for developing, shipping, and running applications. T
 ## Set the environment
 
 1. Install Docker
-For the tutorial, I have installed Docker Toolbox on a Windows machine.
-If you have an old Windows machine like me, then you can
+
+For the tutorial, I have installed Docker Toolbox on a Windows machine. If you have an old Windows machine like me, then you can
 get the installation from [here](https://docs.docker.com/toolbox/overview/).
 
-But it is **advisable** to switch to the latest versions of Windows. The Toolbox includes the docker-machine and docker-compose commands. Once you are done installing Docker, test your Docker installation by running the following command. Use a bash or terminal to run the above command.
+**Note**: It is best to switch to the latest versions of Windows. The Toolbox includes the docker-machine and docker-compose commands. Once you are done installing Docker, test your Docker installation by running the following command. Use Bash or Terminal to run the command.
 
 ```
 `docker run hello-world`
 ```
 
-If you don't have the image in your repo, Docker will automatically pull the image from the Docker Hub and you should get a message that your installation is working fine.
+If you don't have the image in your repo, Docker will automatically pull the image from Docker Hub, and you should get a message that your installation is working fine.
 
 2. Download the Java IDE of your choice. I have installed Eclipse.
 Install [Eclipse IDE](https://www.eclipse.org/downloads/packages/) for Java EE Developers.
@@ -65,12 +65,12 @@ Install [Eclipse IDE](https://www.eclipse.org/downloads/packages/) for Java EE D
 
 - Open the Docker Quick Start Terminal. The Toolbox will show a valid IP address once Docker is started.- Navigate to the application path where the yml file is located.- `Run docker-compose up`- Docker will build the image for Tomcat and a MySQL database and start the container. The project is loaded in the Tomcat webapps directory in the web server container.
 
-4. Open the browser and type `localhost:8080` and you should be able to see the Tomcat home page. This indicates that the web server is ready!
+4. Open the browser and type `localhost:8080`, and you should be able to see the Tomcat home page. This indicates that the web server is ready!
 If you are not able to load using localhost, use the IP of your machine.
 
 ![](/images/docker-for-java-developers/tomcat.png)
 
-5. To go to the application, Click on `/UserSignup` link.
+5. To go to the application, select the `/UserSignup` link.
 
 # ![](/images/docker-for-java-developers/usersignup.png)
 
