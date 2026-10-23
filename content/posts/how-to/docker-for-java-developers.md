@@ -2,26 +2,28 @@
 title: "Docker for Java Developers"
 date: 2019-05-03T11:09:41+00:00
 draft: false
+Difficulty: Beginner
 ---
 
 **Pre-requisites**
 
-- Operating System: Windows- GitHub account- JDK- Eclipse
+- Operating System: Windows
+- GitHub account
+- JDK
+- Eclipse
 
-Difficulty: Beginner
-
-This quick tutorial helps you install Docker on a Windows machine and get the application running on a Web browser. The application is a Java application and a self-paced hands-on to understand Docker.
+This quick tutorial helps you install Docker on a Windows machine and get the application running on a Web browser. The application is a Java application and a self-paced, hands-on way to understand Docker.
 For the code repo, please see 
 
 ```
 `https://github.com/docker/labs/tree/master/developer-tools/java/`
 ```
 
-## **What is Docker?**
+## What is Docker?
 
-Docker is an open platform for developing, shipping, and running applications. The applications are packaged and run in a format called a container. For a more detailed read, the [Docker](https://docs.docker.com/engine/docker-overview/.) documentation is a great resource.
+Docker is an open platform for developing, shipping, and running applications. The applications are packaged and run in a format called a container. For a more detailed read, the [Docker](https://docs.docker.com/engine/docker-overview/) documentation is a great resource.
 
-## **Set the environment**
+## Set the environment
 
 1. Install Docker
 For the tutorial, I have installed Docker Toolbox on a Windows machine.
@@ -43,7 +45,7 @@ Install [Eclipse IDE](https://www.eclipse.org/downloads/packages/) for Java EE D
 
 4. [Maven for Eclipse](https://www.eclipse.org/m2e/)
 
-## **Getting started**
+## Getting started
 
 1. On the command line, clone the repo [registration-docker](https://github.com/docker/labs)
 
