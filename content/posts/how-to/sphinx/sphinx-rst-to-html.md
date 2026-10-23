@@ -22,13 +22,13 @@ This page showcases how to create documentation for Python modules in Sphinx.
 
 Quickstart is a utility to generate the configuration file `conf.py` and the landing page `index.rst`.
 
-3. To generate rst files from the maths modules, you want more than the basic index.rst landing page. To do this, go to the parent folder `sphinx_basics` and run the command:
+3. To generate rst files from the maths modules, you want more than the basic `index.rst` landing page. To do this, go to the parent folder `sphinx_basics` and run the command:
 
 ```python
-  sphinx-apidoc -o docs maths
-```python
+  sphinx-apidoc -o docs maths\
+```
 
-  The command generates `.rst` files for the math modules. It generates `math.rst` and `modules.rst` files. Now, include the generated `modules.rst` file in your `index.rst` file.
+The command generates `.rst` files for the math modules. It generates `math.rst` and `modules.rst` files. Now, include the generated `modules.rst` file in your `index.rst` file.
 
 4. To generate documentation with Sphinx, run the command to create HTML files.
 
