@@ -16,7 +16,7 @@ This quick tutorial helps you install Docker on a Windows machine and get the ap
 For the code repo, please see 
 
 ```
-`https://github.com/docker/labs/tree/master/developer-tools/java/`
+https://github.com/docker/labs/tree/master/developer-tools/java/
 ```
 
 ## What is Docker?
