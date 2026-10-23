@@ -315,7 +315,7 @@ To demonstrate how to use the API for specific real-world scenarios.
 
 - Is my data secure?
 
-## Interactive examples/playground:**
+## Interactive examples/playground
 
 - **Purpose:** 
 To allow developers to experiment with the API in a sandbox environment.
@@ -357,7 +357,7 @@ pip install simple-file-storage-sdk
 
 ```
 
-### API client initialization**
+### API client initialization
 
 To use the SDK, you need to initialize an `ApiClient` instance with your API key:
 
@@ -404,7 +404,7 @@ else:
 
 The SDK raises exceptions for API errors (e.g., `UnauthorizedError`, `BadRequestError`).
 
-### Get file (get_file method)**
+### Get file (get_file method)
 
 - **Description:** 
 Retrieves a file from the storage system.
@@ -486,7 +486,7 @@ except BadRequestError as e:
 
 ```
 
-### Advanced Usage
+### Advanced usage
 
 - **Custom timeouts:**
 
@@ -503,7 +503,7 @@ The SDK uses the standard Python `logging` module. You can configure logging to 
 
 - If you find a bug or want to contribute a feature, please submit an issue or pull request on the SDK's GitHub repository.
 
-### Release Notes/Changelog**
+### Release Notes/Changelog
 
 - (Include a section with version history and changes.)
 
@@ -545,7 +545,7 @@ Now, let's organize the documentation for the "Simple File Storage API" into a c
 
 ### Quick start tutorial
 
-Step 1: Uploading Your First File (Code Example)
+- Step 1: Uploading Your First File (Code Example)
 
 - Step 2: Retrieving the Uploaded File (Code Example)
 
@@ -553,21 +553,21 @@ Step 1: Uploading Your First File (Code Example)
 
 - Troubleshooting common issues
 
-- Next Steps
+- Next steps
 
 ### Conceptual guides
 
-- File Organization
+- File organization
 
-- Understanding Storage Structure
+- Understanding storage structure
 
-- Naming Conventions
+- Naming conventions
 
 ### Security
 
 - Data Encryption
 
-- Access Control
+- Access control
 
 ### Performance
 
@@ -577,17 +577,17 @@ Step 1: Uploading Your First File (Code Example)
 
 ### Error Handling
 
-- API Error Codes
+- API error codes
 
-- Retry Logic
+- Retry logic
 
 ### API Reference
 
 - Authentication
 
-- API Key Authentication
+- API Key authentication
 
-- Authorization Header
+- Authorization header
 
 - Base URL
 
@@ -595,7 +595,7 @@ Step 1: Uploading Your First File (Code Example)
 
 **Upload File (POST /files)**
 
-Description
+- Description
 
 - Request Headers
 
@@ -609,7 +609,7 @@ Description
 
 **Get File (GET /files/{fileId})**
 
-Description
+- Description
 
 - Request Headers
 
@@ -623,7 +623,7 @@ Description
 
 **Delete File (DELETE /files/{fileId})**
 
-Description
+- Description
 
 - Request Headers
 
