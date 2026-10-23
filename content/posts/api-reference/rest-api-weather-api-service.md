@@ -22,17 +22,17 @@ Let's get started with the fundamentals of **API** and web services before we un
 
 APIs are similar to Web services. Web services are web-based applications that help in communication exchange between a client and a server. The client, user or a program, requests a resource and the server responds to the request by returning a response. The requests are made through a web protocol called the Hypertext Transfer Protocol (HTTP) for a request-response mechanism.
 
-**Representational State Transfer (REST)** uses HTTP as the protocol for the message request and response. REST APIs are called RESTFul APIs.
+## What is REST
 
-## Overview of REST
+**Representational State Transfer (REST)** uses HTTP as the protocol for the message request and response. REST APIs are called RESTful APIs.
 
-- REST APIs are different from its predecessor SOAP.
+- REST APIs are different from its predecessor, SOAP.
 
 - An API is an interface between two systems, how they communicate and interact with each other.
 
-- Web services use HTTP protocol for communicating a user request and to return a response.
+- Web services use the HTTP protocol to communicate a user request and to return a response.
 
-- They are language agnostic and work on any platform for communication. You can code in a programming language--Java, NodeJs, Go, Python, etc.
+- They are language-agnostic and work on any platform for communication. You can code in a programming language--Java, Node.js, Go, Python, etc.
 
 - When a system makes a request, a response is generated.
 
@@ -64,9 +64,9 @@ We will use the `appid` to authorize the OpenWeatherMap API to consume the servi
 
 **Input parameters **
 
-API key (appid) and the zip code (zip) of the place.
+- API key (appid) and the zip code (zip) of the place.
 
-API key is a secret code that you need beforehand.
+- API key is a secret code that you need beforehand.
 
 **Curl Request**
 
@@ -128,7 +128,7 @@ The response returned is a JSON object or a payload with key-value pairs.
 }
 ```
 
-**Note**: There are tools like [Postman ](https://www.getpostman.com/downloads/)or [Swagger](https://swagger.io/) that help with writing and validating the API calls. The Swagger online editor to write the OpenAPI specification document can be seen. 
+**Note**: There are tools like [Postman ](https://www.getpostman.com/downloads/)or [Swagger](https://swagger.io/) that help with writing and validating the API calls. The Swagger online editor is used to write the OpenAPI specification document. 
 
 ![](/images/rest-api-weather-api-service/swaggerweather.png)
 
