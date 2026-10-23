@@ -13,9 +13,9 @@ This repository includes writing samples across software and hardware documentat
 - [NGINX documentation contribution](https://github.com/nginx/documentation/pull/425): open-source docs PR
 
 ## Writing samples
-- [API reference](https://janetjotw.github.io/posts/api-reference/)): REST endpoints with curl and Python examples
+- [API reference](https://janetjotw.github.io/posts/api-reference/): REST endpoints with curl and Python examples
 - [Webhooks](https://janetjotw.github.io/posts/conceptual/webhooks/): conceptual overview for developers
-- [<How-to](https://janetjotw.github.io/posts/how-to/): step-by-step task guide
+- [How-to](https://janetjotw.github.io/posts/how-to/): step-by-step task guide
 
 - AI-assisted automations: 
   - [Claude agent skills](https://github.com/janetjotw/claude-skills): reusable skills for documentation tasks
