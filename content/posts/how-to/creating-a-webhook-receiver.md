@@ -38,7 +38,7 @@ Open another tab in your terminal and run the following command:
 ngrok http 5000
 ```
 
-## Step5: Create a base application
+## Step 5: Create a base application
 
 Now that your setup is ready, you'll create a Python app and run it to start the server.
 
