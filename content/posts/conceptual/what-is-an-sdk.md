@@ -40,7 +40,7 @@ SDKs often provide a simplified and more user-friendly way to interact with an A
 
 - **Error handling:** Translating API error messages into more understandable formats.
 
-### Benefits of using an SDK
+### Benefits of an SDK
 
 - **Faster development:** Developers can use pre-built components and code samples to quickly integrate with the API.  
 
