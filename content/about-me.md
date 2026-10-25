@@ -58,7 +58,3 @@ I care about clear, concise writing that respects the reader's time. My goal is 
 
 ![AWS Certified Solutions Architect – Associate badge](/images/about-me/aws-certified-solutions-architect-associate.png)
 
-
-- [User Guide](https://drive.google.com/file/d/1gthLyhNdAcBpD4yJY0TrYoQR3n1vX4QQ/view?usp=drive_link)
-
-- My [work](https://matteroftrust.org/its-easy-being-green-humorous-eco-tips-handbook/) on a book I edited, indexed, and wrote a few pages:
