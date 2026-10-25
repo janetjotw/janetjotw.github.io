@@ -17,4 +17,4 @@ I am fascinated by technology and the art of editing a writing. These are the ar
 
 **Connect with me at:**
 
-*LinkedIn](https://www.linkedin.com/in/janetjose/)*
+*[LinkedIn](https://www.linkedin.com/in/janetjose/)*
