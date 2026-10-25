@@ -1,56 +1,63 @@
 ---
 title: "About Me"
-date: 2018-11-02T15:46:28+00:00
-draft: false
+date: 2018-11-02
+lastmod: 2026-10-23
+hideMeta: true
+ShowReadingTime: false
+ShowShareButtons: false
+ShowToc: false
 ---
 
-When you work with me, you are getting to connect to an individual who is adept at technology, how to use products, and who has written code for almost 9 years, worked in an R&D set-up, and given demos to the Leadership team. This experience is my foundation and a very valuable one with lots of memories.
+I'm a Senior Technical Writer with a software engineering background. I write developer documentation (API references, SDK guides, how-tos, and conceptual topics) for cloud platforms, IoT products, and agentic AI.
 
-There was this urge to reinvent myself, and for the love of words -- the end product, I am a Technical Writer and Editor. I deeply admire clear and succinct writing and how the writer expresses their thoughts. Words have the power to stir, transform and take me to a different world--not to forget the sheer joy of reading a profound sentence.
+Most recently, at Microsoft, I wrote developer documentation for [Security Copilot](https://learn.microsoft.com/en-us/copilot/security/developer/), including YAML code samples and a QuickStart for building custom agents with MCP tools in VS Code. Before that, I documented a PaaS platform at Carrier and a location REST API at Polte.
 
-Call me a "Jill of all trades." I enjoy polishing an author's work and making it ready to connect with the reader. The reader is the primary audience. They can make or break a piece of writing. So, it is essential that your writing be meticulous and crafted to perfection. My goal is to preserve the author’s voice and connect to the reader with clarity and consistency.
+Before becoming a writer, I spent eight years as a software engineer at Hewlett Packard, building web applications for clients such as Vodafone and Telstra and prototyping at HP Labs. That background shapes how I work today. I test the product myself, run the code samples, file bugs when the behavior doesn't match the spec, and write docs that reflect how the product actually works.
 
-I love the way the Web has evolved from the late 90s when I started surfing the Internet. I am a Techie deep in my heart, so I love writing developer and API documentation. I like simplifying concepts for the user and making it easy for them to choose and learn the product. To learn more, have a look at this [summary](https://entwineinwords.wordpress.com/2022/09/09/technical-writing-summary/). 
+I care about clear, concise writing that respects the reader's time. My goal is to help developers understand a product quickly and get to their first working result.
 
-**Style Guides**
+## What I write
 
-**Chicago Manual of Style, AP style, IEEE style, and The Microsoft Manual of Style.**
+- **API documentation:** REST and GraphQL references, with request and response examples in curl and Python
+- **Developer guides:** SDK guides, Getting-started guides, QuickStarts, and Integration guides
+- **Conceptual topics:** Architecture overviews and explanations of how the system works, such as [webhooks](/posts/conceptual/)
+- **Docs-as-code:** Markdown in Git, static site generators (Hugo, Jekyll, Docusaurus), and CI/CD with GitHub Actions
+- **AI-assisted documentation:** [Claude agent skills](https://github.com/janetjotw/claude-skills) and an [automated release-notes pipeline](https://github.com/janetjotw/create-cicd-automation)
 
-Copy editing- Correct copy for grammar, punctuation, style, usage, sentence structure, redundancy, jargon. Can do various levels of editing-light, medium, and heavy and fact-checking.
+## Work experience
 
-**Education**
+- **Microsoft:** Programmer/Writer 3
+- **Carrier Corp:** Senior Technical Writer
+- **Polte:** Senior Technical Writer
+- **[Matter of Trust](https://matteroftrust.org/):** Web Content Editor
+- **Cambridge University Press and On Paper Publishing:** Freelance Editor
+- **Hewlett Packard:** Senior Software Engineer
 
-- AWS Certified Solutions Architect-Associate
+## Open-source contributions
 
-- University of California, San Diego - copy editing certificate
+- [NGINX documentation](https://github.com/nginx/documentation/pull/425)
+- [Gaphas documentation](https://github.com/gaphor/gaphas)
 
-- VTU, Bangalore, India - bachelor of engineering in Electronics and Communication.
+## Other work
 
-![](/images/about-me/aws-certified-solutions-architect-associate.png)
+- [Jenkins developer docs review](https://docs.google.com/presentation/d/1iL3V-9az6vVYEoEDm4gSuW_KsFqunBmFHaQ9IiEABBo/edit?usp=drive_link)
+- [User guide sample](https://drive.google.com/file/d/1gthLyhNdAcBpD4yJY0TrYoQR3n1vX4QQ/view?usp=drive_link)
+- [*It's Easy Being Green*](https://matteroftrust.org/its-easy-being-green-humorous-eco-tips-handbook/): edited, indexed, and contributed writing to this eco-tips handbook
 
-**Work Summary**
+## Editing
 
-- Microsoft as a Programmer/Writer 3 
+- **Style guides:** Google Developer Documentation Style Guide, Microsoft Writing Style Guide, Chicago Manual of Style, AP, and IEEE
+- **Copyediting:** grammar, punctuation, style, usage, sentence structure, redundancy, and jargon
+- **Levels of editing:** light, medium, and heavy editing, plus fact-checking
 
-- Carrier Corp and Polte as a Senior Technical Writer
+## Education and certification
 
-- Web Editor with [MatterOfTrust.org](http://www.matteroftrust.org/)
+- AWS Certified Solutions Architect – Associate
+- Copyediting Certificate, University of California, San Diego
+- Bachelor of Engineering, Electronics and Communication, VTU, Bangalore, India
 
-- Freelance Editor with Cambridge University Press, and On Paper Publishing.
+![AWS Certified Solutions Architect – Associate badge](/images/about-me/aws-certified-solutions-architect-associate.png)
 
-- Senior Software Engineer, Hewlett Packard, Bangalore, India.
-
-**LinkedIn**
-
-https://www.linkedin.com/in/janetjose/
-
-**Open-source Contributions**
-
-- [NGINX](https://github.com/nginx/documentation/commit/ee655538077dd6da12ef8c216404c5a576d18493) docs
-
-- [Gaphas](https://github.com/gaphor/gaphas) docs
-
-- An assignment for reviewing [Jenkins](https://docs.google.com/presentation/d/1iL3V-9az6vVYEoEDm4gSuW_KsFqunBmFHaQ9IiEABBo/edit?usp=drive_link) developer docs
 
 - [User Guide](https://drive.google.com/file/d/1gthLyhNdAcBpD4yJY0TrYoQR3n1vX4QQ/view?usp=drive_link)
 
