@@ -15,6 +15,6 @@ I am fascinated by technology and the art of editing a writing. These are the ar
  	- Article editing
  	- Copyediting
 
-**Write to me at:**
+**Connect with me at:**
 
-*janet.jose@gmail.com*
+*LinkedIn](https://www.linkedin.com/in/janetjose/)*
