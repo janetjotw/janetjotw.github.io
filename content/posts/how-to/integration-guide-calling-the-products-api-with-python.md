@@ -33,7 +33,7 @@ pip install requests
 The API uses an **API Key** for authentication. Include the key in the **headers**:
 
 ```python
-`import requests
+import requests
 
 API_KEY = "replace_your_api_key_here"
 BASE_URL = "https://api.xime.com/v1"
@@ -49,7 +49,7 @@ if response.status_code == 200:
     print("API Response:", response.json())
 else:
     print(f"Error {response.status_code}: {response.text}")
-`
+
 ```
 
 ### Step 3: Making API requests
@@ -59,19 +59,18 @@ This section covers the following **Products** endpoints:
 #### Sending a GET request to retrieve all products
 
 ```python
-`response = requests.get(BASE_URL, headers=headers)
-
-if response.status_code == 200:
-    print("API Response:", response.json())
-else:
-    print(f"Error {response.status_code}: {response.text}")
-`
+    response = requests.get(BASE_URL, headers=headers)
+    
+    if response.status_code == 200:
+        print("API Response:", response.json())
+    else:
+        print(f"Error {response.status_code}: {response.text}")
 ```
 
 #### Sending a POST request to create a new product
 
 ```python
-`payload = {"name": "Test Jane", "email": "jane.test@xyz.com"}
+payload = {"name": "Test Jane", "email": "jane.test@xyz.com"}
 
 response = requests.post(BASE_URL, json=payload, headers=headers)
 
@@ -79,7 +78,6 @@ if response.status_code == 201:
     print("Data successfully created:", response.json())
 else:
     print(f"Error {response.status_code}: {response.text}")
-`
 ```
 
 ### Step 4: API rate limits
@@ -87,13 +85,12 @@ else:
 Limit the number of requests per second/minute to avoid throttling.
 
 ```python
-`import time
+import time
 
 for i in range(5):
     response = requests.get(BASE_URL, headers=headers)
     print(response.json())
     time.sleep(1)  # Avoid hitting the API too frequently
-`
 ```
 
 ### Step 5: Logging API calls
@@ -101,14 +98,13 @@ for i in range(5):
 Python's logging module is used to track API requests and responses for debugging and monitoring.
 
 ```python
-`import logging
+import logging
 
 logging.basicConfig(filename="api_logs.log", level=logging.INFO)
 
 def make_request():
     response = requests.get(BASE_URL, headers=headers)
     logging.info(f"Request made to {BASE_URL} - Status: {response.status_code}")
-`
 ```
 
 ## Troubleshooting
