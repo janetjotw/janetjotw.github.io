@@ -1,6 +1,6 @@
 ---
 title: "About Me"
-date: 2018-11-02
+date: 2026-10-25
 lastmod: 2026-10-23
 hideMeta: true
 ShowReadingTime: false
@@ -14,7 +14,7 @@ Most recently, at Microsoft, I wrote developer documentation for [Security Copil
 
 Before becoming a writer, I spent eight years as a software engineer at Hewlett Packard, building web applications for clients such as Vodafone and Telstra and prototyping at HP Labs. That background shapes how I work today. I test the product myself, run the code samples, file bugs when the behavior doesn't match the spec, and write docs that reflect how the product actually works.
 
-I care about clear, concise writing that respects the reader's time. My goal is to help developers understand a product quickly and get to their first working result.
+I care about clear, concise writing that respects the reader's time. My goal is to help developers understand a product quickly and get to their first working result. I am a problem solver. I test the product first to understand it before I write my first draft. 
 
 ## What I write
 
