@@ -1,7 +1,7 @@
 ---
 title: "About Me"
 date: 2026-10-25
-lastmod: 2026-10-23
+lastmod: 2026-10-29
 hideMeta: true
 ShowReadingTime: false
 ShowShareButtons: false
