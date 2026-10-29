@@ -4,13 +4,20 @@ date: 2022-08-11T23:28:13+00:00
 draft: false
 ---
 
-- [History of web communication](https://entwineinwords.wordpress.com/2022/08/11/webhooks/#history-of-web-communication)
-- [Introduction to webhooks](https://entwineinwords.wordpress.com/2022/08/11/webhooks/#introduction-to-webhooks)
-- [What is a webhook?](https://entwineinwords.wordpress.com/2022/08/11/webhooks/#what-is-a-webhook)
-- [Why a webhook?](https://entwineinwords.wordpress.com/2022/08/11/webhooks/#why-a-webhook)
-- [Security](https://entwineinwords.wordpress.com/2022/08/11/webhooks/#security)
-- [Use cases](https://entwineinwords.wordpress.com/2022/08/11/webhooks/#use-cases)
-- [Example webhook payload](https://entwineinwords.wordpress.com/2022/08/11/webhooks/#example-webhook-payload)
+> [!NOTE]
+> ### 💡 Behind this article
+>
+> * **Why this topic:** At Polte, customers integrating our location platform needed real-time location updates without constantly polling our API. Webhooks solved that, but customers frequently struggled with missing payloads and misconfigured URLs. I wrote this to explain the concept before anyone touches the reference docs.
+> * **How I tested it:** I didn’t document webhooks from the spec as I failed to understand the concept clearly. I explained the problem to a QA staff member, built a local receiver endpoint, triggered automated location events, and inspected the payloads using curl and Python scripts. While testing, I found a structural discrepancy in the event timestamp format and reported it to our team in Asana, updating the User Guide immediately after the fix went live.
+> * **What I learned:** Providing a raw, unedited JSON payload example taught Solution integration partners more than three paragraphs of text ever could. I took a phased approach to a concept I barely understood to help the customer success team at Polte to reference my docs and troubleshoot the customer issues with the sample QA script I had developed.
+
+- [History of web communication](#history-of-web-communication)
+- [Introduction to webhooks](#introduction-to-webhooks)
+- [What is a webhook?](#what-is-a-webhook)
+- [Why a webhook?](#why-a-webhook)
+- [Security](#security)
+- [Use cases](#use-cases)
+- [Example webhook payload](#example-webhook-payload)
 
 Solution providers or enterprises today exhibit their available services or interfaces for the product offerings through APIs. Customers, developers, or third-party integrators can benefit from businesses exposing APIs by utilizing their solution through one of the integration mechanisms called webhooks.
 
@@ -100,3 +107,6 @@ This is a sample webhook payload for an online payment.
   }
 }`
 ```
+
+### Related documentation
+[Create a Webhook receiver](https://janetjotw.github.io/posts/how-to/creating-a-webhook-receiver/)
