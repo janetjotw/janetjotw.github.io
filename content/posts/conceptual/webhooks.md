@@ -12,11 +12,10 @@ draft: false
 > * **How I tested it:** I didn’t document webhooks from the spec as I failed to understand the concept clearly. I explained the problem to a QA staff member, built a local receiver endpoint, triggered automated location events, and inspected the payloads using curl and Python scripts. While testing, I found a structural discrepancy in the event timestamp format and reported it to our team in Asana, updating the User Guide immediately after the fix went live.
 > * **What I learned:** Providing a raw, unedited JSON payload example taught Solution integration partners more than three paragraphs of text ever could. I took a phased approach to a concept I barely understood to help the customer success team at Polte to reference my docs and troubleshoot the customer issues with the sample QA script I had developed.
 
-- [History of web communication](#history-of-web-communication)
-- [Introduction to webhooks](#introduction-to-webhooks)
+- [How do systems exchange data](#how-do-systems-exchange-data)
 - [What is a webhook?](#what-is-a-webhook)
-- [Why a webhook?](#why-a-webhook)
-- [Security](#security)
+- [Why use a webhook instead of polling?](#why-use-a-webhook-instead-of-polling)
+- [Webhook security](#webhook-security)
 - [Use cases](#use-cases)
 - [Example webhook payload](#example-webhook-payload)
 
@@ -28,7 +27,7 @@ Before you understand webhooks, have you ever wondered about the history of web 
 
 A few different types of design architectures for information exchange for distributed systems exist. An underlying concept of web communication on how data is requested and a response is sent back is the request-response mechanism. This article will briefly explain the design patterns for data communication before we dive into webhooks.
 
-**Publish/Subscribe**
+### Publish/Subscribe
 
 The Publish/Subscribe pattern is also called Pub/Sub. Messages are transmitted out by the publisher (host) to the channel, which is also called a message broker and the subscriber receives the published message that it subscribed. Publishers push messages on a topic to the broker and the broker sends the message to the subscriber that subscribed to that topic. The broker acts like a middle man to route messages. 
 
@@ -36,19 +35,19 @@ There is a drawback to the pub/sub design due to the coupling around the message
 
 ![Pub/Sub diagram](/images/webhooks/pub-sub.png)
 
-**Push/Pull**
+### Push/Pull
 
-**Push** - is a pattern where the server pushes the data to the client when the information is available. Examples of the push concept include notifications like an email or a webhook.
+**Push** is a pattern where the server pushes the data to the client when the information is available. Examples of the push concept include notifications like an email or a webhook.
 
 **Pull** is a technique where the client requests data from the server. The client can be a worker in a container requesting work from the server when it is ready to process the load. The client has to **poll or pull** messages from the queue. Examples include AWS SQS. Messages can't be received by multiple clients at the same time. Any one client can receive a message, process and delete it. Other receivers do not receive the same message later. Polling inherently introduces some latency in message delivery, unlike pub/sub where messages are immediately pushed to subscribers.
 
-**Long Polling**
+### Long Polling
 
-Long polling is a technique where the server keeps the incoming client connection open for as long as possible, delivering a response when it is available to the client. Long polling is server-side dependent. The traditional approach of the client requesting for data from the server remains the same, but the server may not respond immediately as it may have none. It responds when the data becomes available. There are pros and cons with long polling that includes performance and scaling. You can visualize an example of an email app sending requests to the server to check if a new mail has arrived.
+Long polling is a technique where the server keeps the incoming client connection open for as long as possible, delivering a response when it is available to the client. Long polling is server-side dependent. The traditional approach of the client requesting for data from the server remains the same, but the server may not respond immediately as it may have none. It responds when the data becomes available. There are pros and cons with long polling that include performance and scaling. You can visualize an example of an email app sending requests to the server to check if a new mail has arrived.
 
 ![Long polling diagram](/images/webhooks/longpolling.png)
 
-**WebSockets** 
+### WebSockets
 
 WebSockets enable two-way real-time or bi-directional communication between two systems. Web Sockets keep the connection open for both the client and the server to exchange information. Examples include online games and chat.
 
@@ -60,7 +59,7 @@ There are quite a few out there that I haven't discussed. Leave a comment if you
 
 ## What is a webhook?
 
-A push-based design is more effective than a poll--lesser strain on the network and resources. Webhook is a push-based design approach to publish data into third-party systems, near real time. It is a one-way communication system i.e., sending data from the system hosting the service to another system that would receive the data, and if needed act upon it. The system pushes data to the configured secured URL or an endpoint when an event is triggered. The receiver must be configured to adhere to the design structure of the incoming data. Webhook requests are sent as a `HTTP POST` method.
+A webhook is an HTTP POST request that one system sends to another automatically when an event happens, so the receiver gets data in near real time without polling. A push-based design is more effective than polling--less strain on the network and resources. A webhook is a push-based design approach to publish data into third-party systems, near real time. It is a one-way communication system, i.e., sending data from the system hosting the service to another system that would receive the data and, if needed, act upon it. The system pushes data to the configured secure URL or an endpoint when an event is triggered. The receiver must be configured to adhere to the design structure of the incoming data.
 
 The diagram depicts a high-level overview of how a webhook interacts between two systems. When there is an event triggered on System A, which may be hosted on the Cloud or on-premises, a webhook push event sends the data or a payload to System B.
 
@@ -88,8 +87,8 @@ When you offer webhook services, they must be secure and follow some best practi
 
 This is a sample webhook payload for an online payment.
 
-```
-`{
+```json
+{
   "_id": "3434ccdfdfdfdfxxxx",
   "product_id": "acxxxxxxxx",
   "product_name": "Parka",
@@ -102,8 +101,8 @@ This is a sample webhook payload for an online payment.
        "updated_at": "2022-12-29T12:23:19.53Z"
      }
   }
-}`
+}
 ```
 
-### Related documentation
+## Related documentation
 [Create a Webhook receiver](https://janetjotw.github.io/posts/how-to/creating-a-webhook-receiver/)
