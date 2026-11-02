@@ -6,7 +6,7 @@ draft: false
 description: "What webhooks are, how they differ from polling and other patterns, how to secure them, and an example payload."
 ---
 
-> [!NOTE]💡 Behind this article
+> 💡 Behind this article
 >
 > * **Why this topic:** At Polte, customers integrating our location platform needed real-time location updates without constantly polling our API. Webhooks solved that, but customers frequently struggled with missing payloads and misconfigured URLs. I wrote this to explain the concept before anyone touches the reference docs.
 > * **How I tested it:** I didn’t document webhooks from the spec as I failed to understand the concept clearly. I explained the problem to a QA staff member, built a local receiver endpoint, triggered automated location events, and inspected the payloads using curl and Python scripts. While testing, I found a structural discrepancy in the event timestamp format and reported it to our team in Asana, updating the User Guide immediately after the fix went live.
