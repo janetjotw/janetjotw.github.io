@@ -24,7 +24,7 @@ Solution providers or enterprises today exhibit their available services or inte
 
 Before you understand webhooks, have you ever wondered about the history of web communication or how two systems communicate with each other?
 
-## History of web communication
+## How do systems exchange data
 
 A few different types of design architectures for information exchange for distributed systems exist. An underlying concept of web communication on how data is requested and a response is sent back is the request-response mechanism. This article will briefly explain the design patterns for data communication before we dive into webhooks.
 
@@ -58,10 +58,6 @@ There are quite a few out there that I haven't discussed. Leave a comment if you
 
 ![WebSockets diagram](/images/webhooks/websockets.png)
 
-Now that you understand some common web communication design patterns, let us dive into webhooks.
-
-## **Introduction to webhooks**
-
 ## What is a webhook?
 
 A push-based design is more effective than a poll--lesser strain on the network and resources. Webhook is a push-based design approach to publish data into third-party systems, near real time. It is a one-way communication system i.e., sending data from the system hosting the service to another system that would receive the data, and if needed act upon it. The system pushes data to the configured secured URL or an endpoint when an event is triggered. The receiver must be configured to adhere to the design structure of the incoming data. Webhook requests are sent as a `HTTP POST` method.
@@ -70,15 +66,15 @@ The diagram depicts a high-level overview of how a webhook interacts between two
 
 ![Webhook diagram](/images/webhooks/webhook.png)
 
-For System B to receive data on its endpoint, it must configure the URL of System B on System A and structure the incoming data based on the payload System A sends and may choose to write its application to process the information. It functions similar to Web service contracts. The payload can be in the format of JSON or an XML.
+For System B to receive data on its endpoint, it must configure the URL of System B on System A and structure the incoming data based on the payload System A sends and may choose to write its application to process the information. It functions similarly to Web service contracts. The payload can be in the format of JSON or XML.
 
-## Why a webhook?
+## Why use a webhook instead of polling?
 
-Now you understand how a webhook functions and how it differs from polling. There is no need for the client to continuously poll the server for any new data. There is no exhaustion of resources on the client and the server and above all connections are not kept open for a long time. The connection is closed once the data is sent.
+Webhooks differ from polling. There is no need for the client to continuously poll the server for any new data. There is no exhaustion of resources on the client, and the server and all connections are not kept open for a long time. The connection is closed once the data is sent.
 
-## Security
+## Webhook security
 
-Make sure that when you offer webhook services, they are secure and follow some best practices in the industry. As discussed earlier, webhook data is sent on a `HTTP POST` request. However, to make it secure when you configure a webhook URL, the receiver could also configure an API Key so that the webhook sender can send the key in the HTTP header so that the receiver knows the incoming information is valid.
+When you offer webhook services, they must be secure and follow some best practices in the industry. Webhook data is sent on an `HTTP POST` request. However, to make it secure when you configure a webhook URL, the receiver could also configure an API Key so that the webhook sender can send the key in the HTTP header so that the receiver knows the incoming information is valid.
 
 ## Use cases
 
