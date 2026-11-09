@@ -117,9 +117,9 @@ Apply this pattern to any troubleshooting section or list of common errors:
 These rules make posts easier for search engines, AI assistants, and readers who skim:
 
 - **Opening sentences**: the first sentence after the front matter and after each heading directly says what the page or section covers, in one self-contained sentence under 150 characters.
-- **Descriptive headings**: specific and action-oriented ("Configure the Flask route"), not generic.
+- **Descriptive headings**: specific and action-oriented ("Configure the Webhook receiver"), rather than generic ones ("Configuration", "Overview", "How it works").
 - **Self-contained sections**: avoid "as mentioned above" or "now that you've done X". Repeat the needed context.
-- **Tables over prose** for lists of fields, parameters, HTTP status codes, or options.
+- **Tables over prose** for lists of fields, parameters, HTTP status codes, or options in Markdown tables rather than prose.
 - **Complete code blocks**: closed fences, a language tag, and examples that run as written.
 
 ## 10. WordPress-import cleanup
