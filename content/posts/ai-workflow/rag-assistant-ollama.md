@@ -1,5 +1,5 @@
 ---
-title: "How to get IBM's Markdown RAG Assistant Running Locally"
+title: "How to get IBM's Markdown RAG Assistant running locally"
 date: 2026-11-18
 tags: ["how-to", "RAG", "LangChain.js", "Ollama", "AI workflow"]
 ---
@@ -31,7 +31,7 @@ You need:
 
 ## Step 1: Switch to Node 20
 
-I was on Node 24. Rather than find out the hard way which dependency would object, I matched the version the tutorial was written for:
+I have Node 24. Rather than find out the hard way which dependency would object, I matched the version the tutorial was written for:
 
 ```bash
 nvm install 20
@@ -41,7 +41,7 @@ node -v
 
 You should see `v20.x`. 
 
-## Step 2: Pull the models
+## Step 2: Pull the Ollama models
 
 The tutorial uses one model. You need two, and Step 5 explains why.
 
@@ -81,7 +81,7 @@ npm error Found: @langchain/core@0.3.80
 npm error peer @langchain/core@"^1.1.38" from @langchain/community@1.1.29
 ```
 
-Read it slowly and it tells you exactly what's wrong. The project's `package.json` mixes two generations of LangChain. `@langchain/core` is pinned to the older 0.3 line, while `@langchain/community` and `@langchain/ollama` are on the newer 1.x line, which needs a newer core. npm can't satisfy both, so it stops.
+Read the error message, and it tells you exactly what's wrong. The project's `package.json` mixes two generations of LangChain. `@langchain/core` is pinned to the older 0.3 line, while `@langchain/community` and `@langchain/ollama` are on the newer 1.x line, which needs a newer core. npm can't satisfy both, so it stops.
 
 Before choosing which way to go, I checked what the code actually imports:
 
@@ -97,7 +97,7 @@ grep -n "langchain" index.js
 8:import { ChatPromptTemplate } from "@langchain/core/prompts";
 ```
 
-Two useful things fall out of this. First, nothing imports `@langchain/community`, so it can go. Second, `MemoryVectorStore` comes from `langchain/vectorstores/memory`, an import path from the 0.3 line. So the right move is to bring everything *down* to 0.3, not up to 1.x.
+Two useful things fall out of this. First, nothing imports `@langchain/community`, so it can go. Second, `MemoryVectorStore` comes from `langchain/vectorstores/memory`, an import path from the `0.3` line. So the right move is to bring everything *down* to 0.3, not up to 1.x.
 
 You might expect `npm uninstall @langchain/community` to do the job. It doesn't: npm resolves the whole dependency tree even when you're removing something, so it fails on the next conflict instead. Edit `package.json` directly with `npm pkg`, which doesn't trigger resolution:
 
